@@ -29,7 +29,7 @@ export default function Page() {
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
 
   return (
-    <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black relative backdrop-blur-md">
+    <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black relative">
       <main className="pt-20">
         <section className="p-8 text-center">
           <motion.h1
@@ -52,13 +52,12 @@ export default function Page() {
               </motion.span>
             ))}
           </motion.p>
-            <div className="flex justify-center items-center relative mt-10">
+            <div className="flex justify-center items-center relative mt-10 blur">
               <Image
                 src="/element-x.png"
                 alt="Element X"
                 height={150}
                 width={150}
-                className="z-[-1]"
               />
           </div>
         </section>
