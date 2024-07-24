@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function Page() {
+function Page() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#e0e0e0] to-[#d0d0d0]">
       <header className="py-6 px-4 md:px-8 flex items-center justify-between">
@@ -74,3 +74,4 @@ export default function Page() {
     </div>
   )
 }
+export default Page;
