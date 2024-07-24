@@ -1,5 +1,4 @@
 import { Inter } from 'next/font/google'
-import { cn } from '@/lib/utils'
 import '../styles/globals.css'
 
 const fontHeading = Inter({
@@ -18,11 +17,9 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <body 
-        className={cn(
-          'antialiased',
-          fontHeading.variable,
-          fontBody.variable
-        )}
+        className={
+          `antialiased ${fontHeading.variable} ${fontBody.variable}`
+        }
       >
         {children}
       </body>
