@@ -1,12 +1,12 @@
-import Link from "next/link"
+import Link from "next/link";
 
 function Page() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0b0b0b] to-[#1f1f1f] text-gray-300">
       <header className="py-6 px-4 md:px-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center">
-            <div className="bg-gray-800 rounded-full w-5 h-5" />
+          <div className="bg-gray-700 w-8 h-8 flex items-center justify-center">
+            <div className="bg-gray-800 w-5 h-5" />
           </div>
           <span className="font-mono text-gray-300 text-lg font-bold">Priyanshu</span>
         </div>
@@ -18,8 +18,8 @@ function Page() {
       </header>
       <main className="flex-1 flex flex-col items-center justify-center px-4 md:px-8 py-12 md:py-24">
         <div className="max-w-2xl text-center space-y-4">
-          <div className="bg-gray-700 rounded-full w-16 h-16 flex items-center justify-center">
-            <div className="bg-gray-800 rounded-full w-10 h-10 animate-pulse" />
+          <div className="bg-gray-700 w-16 h-16 flex items-center justify-center">
+            <div className="bg-gray-800 w-10 h-10 animate-pulse" />
           </div>
           <h1 className="font-mono text-4xl md:text-6xl font-bold text-gray-100">Hi, I'm Priyanshu</h1>
           <p className="font-mono text-gray-300 text-lg md:text-xl">
@@ -45,8 +45,8 @@ function Page() {
       </main>
       <footer className="bg-gray-700 py-6 px-4 md:px-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="bg-gray-800 rounded-full w-8 h-8 flex items-center justify-center">
-            <div className="bg-gray-900 rounded-full w-5 h-5" />
+          <div className="bg-gray-800 w-8 h-8 flex items-center justify-center">
+            <div className="bg-gray-900 w-5 h-5" />
           </div>
           <span className="font-mono text-gray-300 text-lg font-bold">Priyanshu</span>
         </div>
@@ -63,7 +63,7 @@ function Page() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
 export default Page;
