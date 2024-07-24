@@ -54,15 +54,14 @@ export default function Page() {
           </motion.p>
           <div className="relative mt-10">
             <div className="backdrop-blur-md bg-white/30 p-4 rounded-lg">
-              <p className="text-center text-black">Additional content or description here.</p>
+         
             </div>
-            <div className="fixed bottom-0 left-0 w-full h-64">
+            <div className="bottom-0 left-0 w-full h-64">
               <Image
                 src="/element-x.png"
                 alt="Element X"
-                layout="fill"
-                objectFit="cover"
-                quality={100}
+                height={50}
+                width={50}
                 className="z-[-1]"
               />
             </div>
