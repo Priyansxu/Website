@@ -52,13 +52,13 @@ export default function Page() {
               </motion.span>
             ))}
           </motion.p>
-            <div className="flex justify-center items-center relative mt-10 blur">
-              <Image
-                src="/element-x.png"
-                alt="Element X"
-                height={150}
-                width={150}
-              />
+          <div className="flex justify-center items-center relative mt-10 blur">
+            <Image
+              src="/element-x.png"
+              alt="Element X"
+              height={150}
+              width={150}
+            />
           </div>
         </section>
       </main>
