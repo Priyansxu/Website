@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
 const paragraphVariants = {
   hidden: { opacity: 0 },
@@ -27,20 +28,30 @@ export default function Page() {
   const paragraphText =
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
 
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({
+      rotate: [0, 10, -10, 0],
+      transition: { duration: 2, repeat: Infinity, repeatType: "reverse" },
+    });
+  }, [controls]);
+
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black">
-      <main className="pt-20">
-        <section className="p-8 text-center">
+      <main className="pt-20 relative">
+        <section className="p-8 text-center relative">
           <motion.h1
-            className="text-4xl font-bold text-black bg-clip-text"
+            className="text-4xl font-bold text-black bg-clip-text relative z-10"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
+            style={{ filter: "drop-shadow(0 0 10px #000)" }}
           >
             Priyanshu
           </motion.h1>
           <motion.p
-            className="mt-4 text-lg font-mono text-gray-600"
+            className="mt-4 text-lg font-mono text-gray-600 relative z-10"
             initial="hidden"
             animate="visible"
             variants={paragraphVariants}
@@ -51,6 +62,12 @@ export default function Page() {
               </motion.span>
             ))}
           </motion.p>
+          <motion.div
+            className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-[#ff79c6] to-transparent z-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.5 }}
+            transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+          />
         </section>
         <section className="p-8">
           <motion.div
