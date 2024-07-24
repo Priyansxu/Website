@@ -53,7 +53,7 @@ export default function Page() {
             ))}
           </motion.p>
           <div className="relative mt-10">
-            <div className="backdrop-blur-md bg-white/30 p-4 rounded-lg"> 
+            <div className="z-10 backdrop-blur-2xl bg-[#f5f5f5]/30 p-4"> 
             </div>
             <div className="flex justify-center items-center">
               <Image
