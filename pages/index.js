@@ -1,11 +1,8 @@
 "use client";
 
-import header from "../components/header";
-
 export default function Page() {
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black">
-      <header />
       <main className="pt-20">
         <section className="p-8 text-center">
           <h1 className="text-4xl font-bold text-black bg-clip-text">
