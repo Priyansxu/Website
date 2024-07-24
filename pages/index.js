@@ -1,20 +1,37 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 export default function Page() {
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black">
       <main className="pt-20">
         <section className="p-8 text-center">
-          <h1 className="text-4xl font-bold text-black bg-clip-text">
+          <motion.h1 
+            className="text-4xl font-bold text-black bg-clip-text"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             Priyanshu
-          </h1>
-          <p className="mt-4 text-lg font-mono text-gray-600">
+          </motion.h1>
+          <motion.p 
+            className="mt-4 text-lg font-mono text-gray-600"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills,
             and contact details.
-          </p>
+          </motion.p>
         </section>
         <section className="p-8">
-          <div className="mb-8 p-6 bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc] rounded-lg border shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+          <motion.div 
+            className="mb-8 p-6 bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc] rounded-lg border shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             <div className="flex justify-between items-center mb-2">
               <div className="text-sm text-gray-600">Jul 1, 2023</div>
             </div>
@@ -23,8 +40,13 @@ export default function Page() {
               Unkey is an open source API Key management solution. It allows you to create, manage and validate API Keys
               for your users. It's built with security and speed in mind.
             </p>
-          </div>
-          <div className="p-6 bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc] rounded-lg border shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+          </motion.div>
+          <motion.div 
+            className="p-6 bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc] rounded-lg border shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
             <div className="flex justify-between items-center mb-2">
               <div className="text-sm text-gray-600">Apr 1, 2023</div>
             </div>
@@ -34,7 +56,7 @@ export default function Page() {
               around the world. Have you ever wondered how fast your API is in any part of the world? Planetfall allows
               you to find out and monitor it continuously.
             </p>
-          </div>
+          </motion.div>
         </section>
       </main>
     </div>
