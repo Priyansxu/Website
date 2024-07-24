@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const paragraphVariants = {
   hidden: { opacity: 0 },
@@ -28,7 +29,7 @@ export default function Page() {
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
 
   return (
-    <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black">
+    <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black relative">
       <main className="pt-20">
         <section className="p-8 text-center">
           <motion.h1
@@ -51,6 +52,21 @@ export default function Page() {
               </motion.span>
             ))}
           </motion.p>
+          <div className="relative mt-10">
+            <div className="backdrop-blur-md bg-white/30 p-4 rounded-lg">
+              <p className="text-center text-black">Additional content or description here.</p>
+            </div>
+            <div className="fixed bottom-0 left-0 w-full h-64">
+              <Image
+                src="/element-x.png"
+                alt="Element X"
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+                className="z-[-1]"
+              />
+            </div>
+          </div>
         </section>
       </main>
     </div>
