@@ -18,9 +18,9 @@ export default function Page() {
         }`}
       >
         <div
-          className={`text-xl font-bold bg-gradient-to-r ${
-            isDarkMode ? "from-[#f5f5f5] to-[#d5d5d5]" : "from-[#f5f5f5] to-[#d5d5d5]"
-          } bg-clip-text text-transparent`}
+          className={`text-xl font-bold ${
+            isDarkMode ? "text-transparent bg-gradient-to-r from-[#f5f5f5] to-[#d5d5d5]" : "text-black"
+          } bg-clip-text`}
         >
           Priyanshu
         </div>
@@ -31,9 +31,9 @@ export default function Page() {
       <main className="pt-20">
         <section className="p-8 text-center">
           <h1
-            className={`text-4xl font-bold bg-gradient-to-r ${
-              isDarkMode ? "from-[#f5f5f5] to-[#d5d5d5]" : "from-[#f5f5f5] to-[#d5d5d5]"
-            } bg-clip-text text-transparent`}
+            className={`text-4xl font-bold ${
+              isDarkMode ? "text-transparent bg-gradient-to-r from-[#f5f5f5] to-[#d5d5d5]" : "text-black"
+            } bg-clip-text`}
           >
             Priyanshu
           </h1>
@@ -44,11 +44,11 @@ export default function Page() {
         </section>
         <section className="p-8">
           <div
-            className={`mb-8 p-6 bg-gradient-to-br ${
-              isDarkMode ? "from-[#1C1C1E] via-[#111111] to-[#111111]" : "from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5]"
-            } rounded-lg border ${
-              isDarkMode ? "border-[#545358]" : "border-[#ccc]"
-            } shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl`}
+            className={`mb-8 p-6 ${
+              isDarkMode
+                ? "bg-gradient-to-br from-[#1C1C1E] via-[#111111] to-[#111111] border-[#545358]"
+                : "bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc]"
+            } rounded-lg border shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl`}
           >
             <div className="flex justify-between items-center mb-2">
               <div className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>Jul 1, 2023</div>
@@ -60,11 +60,11 @@ export default function Page() {
             </p>
           </div>
           <div
-            className={`p-6 bg-gradient-to-br ${
-              isDarkMode ? "from-[#1C1C1E] via-[#111111] to-[#111111]" : "from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5]"
-            } rounded-lg border ${
-              isDarkMode ? "border-[#545358]" : "border-[#ccc]"
-            } shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl`}
+            className={`p-6 ${
+              isDarkMode
+                ? "bg-gradient-to-br from-[#1C1C1E] via-[#111111] to-[#111111] border-[#545358]"
+                : "bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc]"
+            } rounded-lg border shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl`}
           >
             <div className="flex justify-between items-center mb-2">
               <div className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>Apr 1, 2023</div>
@@ -101,7 +101,6 @@ function MoonIcon(props) {
   )
 }
 
-
 function SunIcon(props) {
   return (
     <svg
@@ -128,7 +127,6 @@ function SunIcon(props) {
     </svg>
   )
 }
-
 
 function XIcon(props) {
   return (
