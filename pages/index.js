@@ -3,7 +3,7 @@
 export default function Page() {
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black">
-      <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-[#f5f5f5] bg-opacity-50 backdrop-blur-md">
+      <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-[#f5f5f5] bg-opacity-50 backdrop-blur-2xl">
         <div className="text-xl font-bold text-black bg-clip-text">
           Priyanshu
         </div>
