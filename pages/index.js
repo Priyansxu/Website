@@ -52,39 +52,6 @@ export default function Page() {
             ))}
           </motion.p>
         </section>
-        <section className="p-8">
-          <motion.div
-            className="mb-8 p-6 bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc] rounded-lg border shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4 }}
-          >
-            <div className="flex justify-between items-center mb-2">
-              <div className="text-sm text-gray-600">Jul 1, 2023</div>
-            </div>
-            <h2 className="text-2xl font-bold text-black">unkey.dev</h2>
-            <p className="mt-2 font-mono text-gray-600">
-              Unkey is an open source API Key management solution. It allows you to create, manage and validate API Keys
-              for your users. It's built with security and speed in mind.
-            </p>
-          </motion.div>
-          <motion.div
-            className="p-6 bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc] rounded-lg border shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.6 }}
-          >
-            <div className="flex justify-between items-center mb-2">
-              <div className="text-sm text-gray-600">Apr 1, 2023</div>
-            </div>
-            <h2 className="text-2xl font-bold text-black">planetfall.io</h2>
-            <p className="mt-2 font-mono text-gray-600">
-              I'm building a SAAS providing global latency monitoring for your APIs and websites from edge locations
-              around the world. Have you ever wondered how fast your API is in any part of the world? Planetfall allows
-              you to find out and monitor it continuously.
-            </p>
-          </motion.div>
-        </section>
       </main>
     </div>
   );
