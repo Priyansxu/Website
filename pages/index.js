@@ -53,16 +53,14 @@ export default function Page() {
             ))}
           </motion.p>
           <div className="relative mt-10">
-            <div className="backdrop-blur-md bg-white/30 p-4 rounded-lg">
-         
+            <div className="backdrop-blur-md bg-white/30 p-4 rounded-lg"> 
             </div>
-            <div className="bottom-0 left-0 w-full h-64">
+            <div className="flex justify-center items-center">
               <Image
                 src="/element-x.png"
                 alt="Element X"
-                height={50}
-                width={50}
-                className="z-[-1]"
+                height={150}
+                width={150}
               />
             </div>
           </div>
