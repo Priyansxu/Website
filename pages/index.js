@@ -23,23 +23,6 @@ const letterVariants = {
   },
 };
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1,
-    },
-  },
-  hover: {
-    scale: 1.05,
-    transition: {
-      duration: 0.3,
-    },
-  },
-};
-
 export default function Page() {
   const paragraphText =
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
@@ -71,11 +54,10 @@ export default function Page() {
         </section>
         <section className="p-8">
           <motion.div
-            className="mb-8 p-6 bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc] rounded-lg border shadow-lg transform transition-all"
-            variants={cardVariants}
-            initial="hidden"
-            animate="visible"
-            whileHover="hover"
+            className="mb-8 p-6 bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc] rounded-lg border shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
           >
             <div className="flex justify-between items-center mb-2">
               <div className="text-sm text-gray-600">Jul 1, 2023</div>
@@ -87,11 +69,10 @@ export default function Page() {
             </p>
           </motion.div>
           <motion.div
-            className="p-6 bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc] rounded-lg border shadow-lg transform transition-all"
-            variants={cardVariants}
-            initial="hidden"
-            animate="visible"
-            whileHover="hover"
+            className="p-6 bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] border-[#ccc] rounded-lg border shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6 }}
           >
             <div className="flex justify-between items-center mb-2">
               <div className="text-sm text-gray-600">Apr 1, 2023</div>
