@@ -2,7 +2,7 @@ import Link from "next/link"
 
 function Page() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#111111] to-[#333333] text-gray-300">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0b0b0b] to-[#1f1f1f] text-gray-300">
       <header className="py-6 px-4 md:px-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="bg-gray-700 rounded-full w-8 h-8 flex items-center justify-center">
@@ -27,14 +27,14 @@ function Page() {
           </p>
         </div>
         <div className="mt-12 md:mt-24 w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-[#222222] rounded-lg p-6 flex flex-col items-center justify-center shadow-lg shadow-gray-900/50 hover:shadow-gray-900/70 transition-shadow">
+          <div className="bg-gradient-to-b from-[#222222] to-[#1b1b1b] rounded-lg p-6 flex flex-col items-center justify-center shadow-lg shadow-gray-900/50 hover:shadow-gray-900/70 transition-shadow border border-gray-700">
             <h2 className="font-mono text-2xl md:text-3xl font-bold text-gray-100">About Me</h2>
             <p className="font-mono text-gray-300 text-lg md:text-xl mt-4">
               I'm a web developer with a passion for creating beautiful and functional websites. I have experience in a
               variety of technologies, including React, Node.js, and MongoDB.
             </p>
           </div>
-          <div className="bg-[#222222] rounded-lg p-6 flex flex-col items-center justify-center shadow-lg shadow-gray-900/50 hover:shadow-gray-900/70 transition-shadow">
+          <div className="bg-gradient-to-b from-[#222222] to-[#1b1b1b] rounded-lg p-6 flex flex-col items-center justify-center shadow-lg shadow-gray-900/50 hover:shadow-gray-900/70 transition-shadow border border-gray-700">
             <h2 className="font-mono text-2xl md:text-3xl font-bold text-gray-100">My Projects</h2>
             <p className="font-mono text-gray-300 text-lg md:text-xl mt-4">
               Check out some of my recent projects, including a social media platform, an e-commerce website, and a
@@ -65,4 +65,5 @@ function Page() {
     </div>
   )
 }
+
 export default Page;
