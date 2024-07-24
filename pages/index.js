@@ -1,69 +1,151 @@
-import Link from "next/link";
+"use client"
 
-function Page() {
+import { useState } from "react"
+
+export default function Page() {
+  const [isDarkMode, setIsDarkMode] = useState(false)
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0b0b0b] to-[#1f1f1f] text-gray-300">
-      <header className="py-6 px-4 md:px-8 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="bg-gray-700 w-8 h-8 flex items-center justify-center">
-            <div className="bg-gray-800 w-5 h-5" />
-          </div>
-          <span className="font-mono text-gray-300 text-lg font-bold">Priyanshu</span>
+    <div
+      className={`min-h-screen font-mono ${
+        isDarkMode
+          ? "bg-[#131315] text-white"
+          : "bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black"
+      }`}
+    >
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 ${
+          isDarkMode ? "bg-[#1C1C1E] backdrop-blur-md" : "bg-[#f5f5f5] bg-opacity-50 backdrop-blur-md"
+        }`}
+      >
+        <div
+          className={`text-xl font-bold bg-gradient-to-r ${
+            isDarkMode ? "from-[#f5f5f5] to-[#d5d5d5]" : "from-[#f5f5f5] to-[#d5d5d5]"
+          } bg-clip-text text-transparent`}
+        >
+          Priyanshu
         </div>
-        <nav className="hidden md:flex items-center gap-4">
-          <Link href="#" className="font-mono text-gray-300 hover:text-gray-100 transition-colors" prefetch={false}>
-            Home
-          </Link>
-        </nav>
+        <button className="p-2 rounded-full focus:outline-none" onClick={() => setIsDarkMode(!isDarkMode)}>
+          {isDarkMode ? <SunIcon className="h-4 w-4" /> : <MoonIcon className="h-4 w-4" />}
+        </button>
       </header>
-      <main className="flex-1 flex flex-col items-center justify-center px-4 md:px-8 py-12 md:py-24">
-        <div className="max-w-2xl text-center space-y-4">
-          <div className="bg-gray-700 w-16 h-16 flex items-center justify-center">
-            <div className="bg-gray-800 w-10 h-10 animate-pulse" />
-          </div>
-          <h1 className="font-mono text-4xl md:text-6xl font-bold text-gray-100">Hi, I'm Priyanshu</h1>
-          <p className="font-mono text-gray-300 text-lg md:text-xl">
-            I'm a passionate web developer with a focus on creating beautiful and functional user experiences.
+      <main className="pt-20">
+        <section className="p-8 text-center">
+          <h1
+            className={`text-4xl font-bold bg-gradient-to-r ${
+              isDarkMode ? "from-[#f5f5f5] to-[#d5d5d5]" : "from-[#f5f5f5] to-[#d5d5d5]"
+            } bg-clip-text text-transparent`}
+          >
+            Priyanshu
+          </h1>
+          <p className={`mt-4 text-lg font-mono ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+            Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills,
+            and contact details.
           </p>
-        </div>
-        <div className="mt-12 md:mt-24 w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-b from-[#222222] to-[#1b1b1b] rounded-lg p-6 flex flex-col items-center justify-center shadow-lg shadow-gray-900/50 hover:shadow-gray-900/70 transition-shadow border border-gray-700">
-            <h2 className="font-mono text-2xl md:text-3xl font-bold text-gray-100">About Me</h2>
-            <p className="font-mono text-gray-300 text-lg md:text-xl mt-4">
-              I'm a web developer with a passion for creating beautiful and functional websites. I have experience in a
-              variety of technologies, including React, Node.js, and MongoDB.
+        </section>
+        <section className="p-8">
+          <div
+            className={`mb-8 p-6 bg-gradient-to-br ${
+              isDarkMode ? "from-[#1C1C1E] via-[#111111] to-[#111111]" : "from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5]"
+            } rounded-lg border ${
+              isDarkMode ? "border-[#545358]" : "border-[#ccc]"
+            } shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl`}
+          >
+            <div className="flex justify-between items-center mb-2">
+              <div className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>Jul 1, 2023</div>
+            </div>
+            <h2 className={`text-2xl font-bold ${isDarkMode ? "text-white" : "text-black"}`}>unkey.dev</h2>
+            <p className={`mt-2 font-mono ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+              Unkey is an open source API Key management solution. It allows you to create, manage and validate API Keys
+              for your users. It's built with security and speed in mind.
             </p>
           </div>
-          <div className="bg-gradient-to-b from-[#222222] to-[#1b1b1b] rounded-lg p-6 flex flex-col items-center justify-center shadow-lg shadow-gray-900/50 hover:shadow-gray-900/70 transition-shadow border border-gray-700">
-            <h2 className="font-mono text-2xl md:text-3xl font-bold text-gray-100">My Projects</h2>
-            <p className="font-mono text-gray-300 text-lg md:text-xl mt-4">
-              Check out some of my recent projects, including a social media platform, an e-commerce website, and a
-              personal blog.
+          <div
+            className={`p-6 bg-gradient-to-br ${
+              isDarkMode ? "from-[#1C1C1E] via-[#111111] to-[#111111]" : "from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5]"
+            } rounded-lg border ${
+              isDarkMode ? "border-[#545358]" : "border-[#ccc]"
+            } shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl`}
+          >
+            <div className="flex justify-between items-center mb-2">
+              <div className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>Apr 1, 2023</div>
+            </div>
+            <h2 className={`text-2xl font-bold ${isDarkMode ? "text-white" : "text-black"}`}>planetfall.io</h2>
+            <p className={`mt-2 font-mono ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+              I'm building a SAAS providing global latency monitoring for your APIs and websites from edge locations
+              around the world. Have you ever wondered how fast your API is in any part of the world? Planetfall allows
+              you to find out and monitor it continuously.
             </p>
           </div>
-        </div>
+        </section>
       </main>
-      <footer className="bg-gray-700 py-6 px-4 md:px-8 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="bg-gray-800 w-8 h-8 flex items-center justify-center">
-            <div className="bg-gray-900 w-5 h-5" />
-          </div>
-          <span className="font-mono text-gray-300 text-lg font-bold">Priyanshu</span>
-        </div>
-        <div className="hidden md:flex items-center gap-4">
-          <Link href="#" className="font-mono text-gray-300 hover:text-gray-100 transition-colors" prefetch={false}>
-            LinkedIn
-          </Link>
-          <Link href="#" className="font-mono text-gray-300 hover:text-gray-100 transition-colors" prefetch={false}>
-            GitHub
-          </Link>
-          <Link href="#" className="font-mono text-gray-300 hover:text-gray-100 transition-colors" prefetch={false}>
-            Twitter
-          </Link>
-        </div>
-      </footer>
     </div>
-  );
+  )
 }
 
-export default Page;
+function MoonIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+    </svg>
+  )
+}
+
+
+function SunIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2" />
+      <path d="M12 20v2" />
+      <path d="m4.93 4.93 1.41 1.41" />
+      <path d="m17.66 17.66 1.41 1.41" />
+      <path d="M2 12h2" />
+      <path d="M20 12h2" />
+      <path d="m6.34 17.66-1.41 1.41" />
+      <path d="m19.07 4.93-1.41 1.41" />
+    </svg>
+  )
+}
+
+
+function XIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M18 6 6 18" />
+      <path d="m6 6 12 12" />
+    </svg>
+  )
+}
