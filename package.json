@@ -12,6 +12,8 @@
     "react-dom": "latest",
     "tailwindcss": "latest",
     "postcss": "^8.3.6",
-    "autoprefixer": "^10.2.6"
+    "autoprefixer": "^10.2.6",
+    "@nextui-org/react": "latest",
+    "classnames": "latest"
   }
 }
