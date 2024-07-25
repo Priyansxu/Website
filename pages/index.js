@@ -47,12 +47,12 @@ const imageVariants = {
 };
 
 const divVariants = {
-  hidden: { opacity: 0, x: -100 },
+  hidden: { opacity: 0, x: -20 },
   visible: {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 2,
+      duration: 1,
     },
   },
 };
@@ -118,7 +118,7 @@ export default function Page() {
               />
             </motion.div>
             <motion.div
-              className="flex-grow pr-4 text-black text-xs justify-center text-right place-items-center"
+              className="flex-grow pr-4 text-black text-xs flex items-center justify-center text-center p-4 my-4"
               initial="hidden"
               animate="visible"
               variants={paragraphVariants}
@@ -139,7 +139,7 @@ export default function Page() {
             variants={divVariants}
           >
             <motion.div
-              className="flex-grow pl-4 text-black text-xs justify-center text-left place-items-center"
+              className="flex-grow pl-4 text-black text-xs flex items-center justify-center text-center p-4 my-4"
               initial="hidden"
               animate="visible"
               variants={paragraphVariants}
@@ -169,4 +169,4 @@ export default function Page() {
       </main>
     </div>
   );
-} 
+}
