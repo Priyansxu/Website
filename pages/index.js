@@ -53,12 +53,12 @@ export default function Page() {
             ))}
           </motion.p>
           <div className="flex justify-center items-center relative mt-6">
-            <div className="absolute inset-0 backdrop-blur-md p-6 z-20"></div>
+            <div className="absolute inset-0 backdrop-blur-sm p-6 z-20"></div>
             <Image
               src={Fluid}
               alt="Fluid"
               height={150}
-              width={400}
+              width={600}
               className="relative z-10"
             />
           </div>
