@@ -122,7 +122,7 @@ export default function Page() {
               <Image
                 src={Helmet}
                 alt="Helmet"
-                className="object-contain h-full blur-sm"
+                className="object-contain h-full w-full blur-xs"
               />
             </motion.div>
             <div className="flex-grow pr-4 text-black text-xs flex items-center justify-center text-right">
