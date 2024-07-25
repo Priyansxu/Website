@@ -64,7 +64,7 @@ export default function Page() {
           </div>
         </section>
      <section className="my-6 mx-4 md:mx15">
-<div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-[#bebebe] border rounded shadow-md overflow-hidden">
+<div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-[#B3B6BF] to-[#E4DFE6] border-black rounded shadow-md overflow-hidden">
       <div className="flex-none w-1/3">
         <Image 
           src={Helmet}
@@ -72,7 +72,7 @@ export default function Page() {
           className="object-cover h-full w-full"
         />
       </div>
-      <div className="flex-grow pr-4 text-black text-sm justify-center text-center">
+      <div className="flex-grow pr-4 text-black text-xs justify-center text-center">
         <p className="my-2 py-4">
          Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.
         </p>
