@@ -63,23 +63,22 @@ export default function Page() {
             />
           </div>
         </section>
-        <section className="mt-6 my-6 mx-4 md:mx-10">
-<div className="rounded bg-gradient-to-br from-[#f5f5f5] to-[#d5d5d5] flex items-center justify-center">
-            <div className="relative w-1/2 h-48">
-              <Image
-                src={Helmet}
-                alt="Helmet"
-                layout="fill"
-                objectFit="contain"
-              />
-            </div>
-            <div className="w-1/2 flex pr-4">
-              <p className="text-sm text-gray-700 text-left md:text-left">
-                This is a paragraph text that is displayed on the right side of the image. You can customize this text to include any content you like.
-              </p>
-            </div>
-          </div>
-        </section>
+     <section className="my-6 mx-4 md:mx15">
+<div className="flex border rounded overflow-hidden">
+      <div className="flex-none w-1/3">
+        <Image 
+          src={Helmet}
+          alt="Helmet"
+          className="object-cover h-full w-full"
+        />
+      </div>
+      <div className="flex-grow p-4 text-sm">
+        <p>
+          Your paragraph content goes here. This text will be aligned to the right of the image.
+        </p>
+      </div>
+    </div> 
+  </section>
       </main>
     </div>
   );
