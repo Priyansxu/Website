@@ -8,7 +8,7 @@ return (
   alt="x"
   height={150}
   width={150}
-</div>
 />
+</div>
  );
 }
