@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import ElementX from "../public/element-x.png";
+import Helmet from "../public/helmet.png";
 
 const paragraphVariants = {
   hidden: { opacity: 0 },
@@ -65,6 +66,25 @@ export default function Page() {
             />
           </div>
         </section>
+        <section className="mt-10 p-8"
+         <div className="h-screen bg-gradient-to-br from-[#f5f5f5] to-[#d5d5d5] flex items-center justify-center">
+      <div className="flex w-3/4 h-1/2">
+        <div className="relative w-1/2 h-full">
+          <Image
+            src={helmet}
+            alt="Helmet"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
+        <div className="w-1/2 flex items-center justify-center">
+          <p className="text-xl text-gray-700">
+            This is a paragraph text that is displayed on the right side of the image. You can customize this text to include any content you like.
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
       </main>
     </div>
   );
