@@ -64,7 +64,8 @@ export default function Page() {
           </div>
         </section>
         <section className="mt-6 mx-6">
-          <div className="rounded bg-gradient-to-br from-[#f5f5f5] to-[#d5d5d5] flex items-center justify-center p-4">
+          <div className="p-6">
+<div className="rounded bg-gradient-to-br from-[#f5f5f5] to-[#d5d5d5] flex items-center justify-center">
             <div className="relative w-1/2 h-48 md:h-full">
               <Image
                 src={Helmet}
@@ -80,6 +81,7 @@ export default function Page() {
               </p>
             </div>
           </div>
+       </div>
         </section>
       </main>
     </div>
