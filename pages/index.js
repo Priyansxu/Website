@@ -29,7 +29,7 @@ export default function Page() {
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
 
   return (
-    <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] via-[#959595] to-[#858585] text-black relative">
+   <div className="min-h-screen font-mono bg-gradient-to-br from-[#d5d5d5] via-[#c5c5c5] to-[#b5b5b5] text-black relative">
       <main className="pt-20">
         <section className="p-8 text-center">
           <motion.h1
@@ -64,7 +64,7 @@ export default function Page() {
           </div>
         </section>
      <section className="my-6 mx-4 md:mx15">
-<div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex border border-darker-bfbfbf bg-gradient-to-br from-d3d3d3 via-e0e0e0 to-bfbfbf rounded overflow-hidden">
+<div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex border border-darker-bfbfbf bg-gradient-to-br from-[#d3d3d3] via-[#e0e0e0] to-[#bfbfbf] border-gradient-to-br from-[#cdcdcd] via-[#f0f0f0] to-[#e0e0e0]"> rounded overflow-hidden">
       <div className="flex-none w-1/3">
         <Image 
           src={Helmet}
@@ -72,7 +72,7 @@ export default function Page() {
           className="object-cover h-full w-full"
         />
       </div>
-      <div className="flex-grow p-4 text-sm justify-center items-center">
+      <div className="flex-grow p-4 text-sm justify-center text-center">
         <p>
           Your paragraph content goes here. This text will be aligned to the right of the image.
         </p>
