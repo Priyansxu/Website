@@ -71,7 +71,7 @@ export default function Page() {
       <div className="flex w-3/4 h-1/2">
         <div className="relative w-1/2 h-full">
           <Image
-            src={helmet}
+            src={Helmet}
             alt="Helmet"
             layout="fill"
             objectFit="contain"
