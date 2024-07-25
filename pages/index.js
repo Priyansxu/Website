@@ -73,7 +73,7 @@ export default function Page() {
                 objectFit="contain"
               />
             </div>
-            <div className="w-1/2 flex">
+            <div className="w-1/2 flex pr-4">
               <p className="text-sm text-gray-700 text-left md:text-left">
                 This is a paragraph text that is displayed on the right side of the image. You can customize this text to include any content you like.
               </p>
