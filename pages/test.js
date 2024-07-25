@@ -2,7 +2,7 @@ import Image from "next/image";
 import ElementX from "../public/element-x.png";
 export default function Test() {
 return (
-<div className="item-centre flex blur-md">
+<div className="flex justify-center items-center relative mt-10 blur-md">
 <Image 
   src={ElementX}
   alt="x"
