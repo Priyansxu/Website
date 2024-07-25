@@ -53,7 +53,7 @@ export default function Page() {
             ))}
           </motion.p>
           <div className="flex justify-center items-center relative mt-6">
-            <div className="absolute inset-0 backdrop-blur-sm p-6 z-20"></div>
+            <div className="absolute inset-0 backdrop-blur-md p-6 z-20"></div>
             <Image
               src={Fluid}
               alt="Fluid"
@@ -73,7 +73,7 @@ export default function Page() {
         />
       </div>
       <div className="flex-grow p-4 text-sm justify-center text-center">
-        <p className="my-4 pt-4">
+        <p className="py-8">
           Your paragraph content goes here. This text will be aligned to the right of the image.
         </p>
       </div>
