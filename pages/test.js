@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import ElementX from "../public/element-x.png";
 export default function Test() {
 return (
@@ -8,6 +8,7 @@ return (
   alt="x"
   height={150}
   width={150}
+</div>
 />
  );
 }
