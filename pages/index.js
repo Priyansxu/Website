@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import Image from "next/image";
 import Fluid from "../public/fluid.png";
 import Helmet from "../public/helmet.png";
@@ -47,7 +48,7 @@ const imageVariants = {
 };
 
 const divVariants = {
-  hidden: { opacity: 0, x: -20 },
+  hidden: { opacity: 0, x: -10 },
   visible: {
     opacity: 1,
     x: 0,
@@ -61,8 +62,8 @@ export default function Page() {
   const paragraphText =
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
 
-  const secondSectionText =
-    "Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.";
+  const secondSectionRef = useRef(null);
+  const isInView = useInView(secondSectionRef, { once: true });
 
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black relative">
@@ -101,17 +102,17 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row my-6 mx-4 md:mx-15 gap-2">
+        <section ref={secondSectionRef} className="flex flex-col md:flex-row my-6 mx-4 md:mx-15 gap-2">
           <motion.div
             className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60"
             initial="hidden"
-            animate="visible"
+            animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
           >
             <motion.div
               className="flex-none w-1/3"
               initial="hidden"
-              animate="visible"
+              animate={isInView ? "visible" : "hidden"}
               variants={imageVariants}
             >
               <Image
@@ -120,45 +121,45 @@ export default function Page() {
                 className="object-cover h-full w-full"
               />
             </motion.div>
-            <motion.div
-              className="flex-grow pr-4 text-black text-xs flex items-center justify-center"
-              initial="hidden"
-              animate="visible"
-              variants={paragraphVariants}
-            >
-              <p className="my-2 py-4 mx-4">
-                {secondSectionText.split("").map((char, index) => (
+            <div className="flex-grow pr-4 text-black text-xs flex items-center justify-center text-right">
+              <motion.p
+                className="my-2 py-4 mx-4"
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                variants={paragraphVariants}
+              >
+                {"Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.".split("").map((char, index) => (
                   <motion.span key={index} variants={letterVariantsSecondSection}>
                     {char}
                   </motion.span>
                 ))}
-              </p>
-            </motion.div>
+              </motion.p>
+            </div>
           </motion.div>
           <motion.div
             className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60"
             initial="hidden"
-            animate="visible"
+            animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
           >
-            <motion.div
-              className="flex-grow pl-4 text-black text-xs flex items-center justify-center"
-              initial="hidden"
-              animate="visible"
-              variants={paragraphVariants}
-            >
-              <p className="my-2 py-4 mx-4">
-                {secondSectionText.split("").map((char, index) => (
+            <div className="flex-grow pl-4 text-black text-xs flex items-center justify-center text-left">
+              <motion.p
+                className="my-2 py-4 mx-4"
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                variants={paragraphVariants}
+              >
+                {"Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.".split("").map((char, index) => (
                   <motion.span key={index} variants={letterVariantsSecondSection}>
                     {char}
                   </motion.span>
                 ))}
-              </p>
-            </motion.div>
+              </motion.p>
+            </div>
             <motion.div
               className="flex-none w-1/3"
               initial="hidden"
-              animate="visible"
+              animate={isInView ? "visible" : "hidden"}
               variants={imageVariants}
             >
               <Image
