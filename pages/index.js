@@ -78,7 +78,7 @@ export default function Page() {
       </p>
     </div>
   </div>
-  <div className="flex flex-col md:flex-row-reverse mt-6 bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden">
+  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex flex-col md:flex-row-reverse mt-6 bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden">
     <div className="flex-none w-full md:w-1/3">
       <Image 
         src={Helmet}
