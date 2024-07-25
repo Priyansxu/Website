@@ -169,7 +169,7 @@ export default function Page() {
               <Image
                 src={ElementX}
                 alt="X"
-                className="object-cover blur-sm"
+                className="object-cover blur-sm h-full"
               />
             </motion.div>
           </motion.div>
