@@ -64,7 +64,7 @@ export default function Page() {
           </div>
         </section>
      <section className="my-6 mx-4 md:mx15">
-<div className="max-w-sm mx-auto sm:max-w-xs md:max-w-sm lg:max-w-md flex border bg-gray-400 rounded overflow-hidden">
+<div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex border border-darker-bfbfbf bg-gradient-to-br from-e0e0e0 to-bfbfbf rounded overflow-hidden">
       <div className="flex-none w-1/3">
         <Image 
           src={Helmet}
@@ -72,7 +72,7 @@ export default function Page() {
           className="object-cover h-full w-full"
         />
       </div>
-      <div className="flex-grow p-4 text-sm">
+      <div className="flex-grow p-4 text-sm justify-center">
         <p>
           Your paragraph content goes here. This text will be aligned to the right of the image.
         </p>
