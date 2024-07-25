@@ -146,7 +146,7 @@ export default function Page() {
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
           >
-            <div className="flex-grow pl-4 text-black text-xs flex items-center justify-center w-1/3">
+            <div className="flex-grow pl-4 text-black text-xs flex items-center justify-center">
               <motion.p
                 className="my-2 py-4 mx-4"
                 initial="hidden"
@@ -160,6 +160,18 @@ export default function Page() {
                 ))}
               </motion.p>
             </div>
+      <motion.div
+              className="flex-none w-1/3"
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+              variants={imageVariants}
+            >
+              <Image
+                src={ElementX}
+                alt="X"
+                className="object-cover h-full w-full"
+              />
+            </motion.div>
           </motion.div>
         </section>
       </main>
