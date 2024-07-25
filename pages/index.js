@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import ElementX from "../public/element-x.png";
 
 const paragraphVariants = {
   hidden: { opacity: 0 },
@@ -54,8 +55,8 @@ export default function Page() {
           </motion.p>
           <div className="flex justify-center items-center relative mt-10 blur-lg">
             <Image
-              src="/element-x.png"
-              alt="Element X"
+              src="ElementX"
+              alt="Element"
               height={150}
               width={150}
               className="blur-md"
