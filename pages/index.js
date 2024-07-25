@@ -161,7 +161,7 @@ export default function Page() {
               </motion.p>
             </div>
       <motion.div
-              className="flex-none w-1/3"
+              className="flex-none items-center w-1/3"
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
               variants={imageVariants}
