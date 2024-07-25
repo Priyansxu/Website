@@ -64,7 +64,6 @@ export default function Page() {
               className="relative z-10"
             />
           </div>
-          </div>
         </section>
       </main>
     </div>
