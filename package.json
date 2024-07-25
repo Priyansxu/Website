@@ -10,7 +10,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "tailwindcss": "latest",
+    "tailwindcss": "3.4.6",
     "postcss": "^8.3.6",
     "framer-motion": "latest",
     "autoprefixer": "^10.2.6"
