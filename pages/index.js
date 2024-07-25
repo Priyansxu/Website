@@ -24,19 +24,6 @@ const letterVariants = {
   },
 };
 
-const grainAnimation = {
-  initial: { opacity: 0, x: '-100%' },
-  animate: { opacity: 1, x: '0%' },
-  exit: { opacity: 0, x: '100%' },
-  transition: { duration: 1 },
-};
-
-const textAnimation = {
-  initial: { opacity: 0, y: '100%' },
-  animate: { opacity: 1, y: '0%' },
-  transition: { duration: 1, delay: 0.5 },
-};
-
 export default function Page() {
   const paragraphText =
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
@@ -77,67 +64,37 @@ export default function Page() {
             />
           </div>
         </section>
-
-     <section className="flex flex-col md:flex-row my-6 mx-4 md:mx-15 gap-2">
-      <motion.div
-        className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60"
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        transition="transition"
-        variants={grainAnimation}
-      >
-        <div className="flex-none w-1/3">
-          <Image
-            src={Helmet}
-            alt="Helmet"
-            className="object-cover h-full w-full"
-          />
-        </div>
-        <div className="flex-grow pr-4 text-black text-xs justify-center text-right place-items-center">
-          <motion.p
-            className="my-2 py-4"
-            initial="initial"
-            animate="animate"
-            transition="transition"
-            variants={textAnimation}
-          >
-            Priyanshu Gupta, born in 2007. A passionate explorer of programming,
-            graphic design, psychology, and space. Always pushing the boundaries
-            of creativity.
-          </motion.p>
-        </div>
-      </motion.div>
-      <motion.div
-        className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60"
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        transition="transition"
-        variants={grainAnimation}
-      >
-        <div className="flex-grow pl-4 text-black text-xs justify-center text-left place-items-center">
-          <motion.p
-            className="my-2 py-4"
-            initial="initial"
-            animate="animate"
-            transition="transition"
-            variants={textAnimation}
-          >
-            Priyanshu Gupta, born in 2007. A passionate explorer of programming,
-            graphic design, psychology, and space. Always pushing the boundaries
-            of creativity.
-          </motion.p>
-        </div>
-        <div className="flex-none w-1/3">
-          <Image
-            src={Helmet}
-            alt="Helmet"
-            className="object-cover h-full w-full"
-          />
-        </div>
-      </motion.div>
-    </section>
+   
+   <section className="flex flex-col md:flex-row my-6 mx-4 md:mx-15 gap-2">
+  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60">
+    <div className="flex-none w-1/3">
+      <Image 
+        src={Helmet}
+        alt="Helmet"
+        className="object-cover h-full w-full"
+      />
+    </div>
+    <div className="flex-grow pr-4 text-black text-xs justify-center text-right place-items-center">
+      <p className="my-2 py-4">
+        Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.
+      </p>
+    </div>
+  </div>
+  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60">
+ <div className="flex-grow pl-4 text-black text-xs justify-center text-left place-items-center">
+      <p className="my-2 py-4">
+        Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.
+      </p>
+    </div>
+    <div className="flex-none w-1/3">
+      <Image 
+        src={Helmet}
+        alt="Helmet"
+        className="object-cover h-full w-full"
+      />
+    </div>
+</div>
+</section>
       </main>
     </div>
   );
