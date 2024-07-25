@@ -73,7 +73,7 @@ export default function Page() {
         />
       </div>
       <div className="flex-grow pr-4 text-black text-sm justify-center text-center">
-        <p className="my-8 py-8">
+        <p className="my-2 py-4">
          Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.
         </p>
       </div>
