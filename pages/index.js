@@ -64,29 +64,29 @@ export default function Page() {
           </div>
         </section>
      <section className="my-6 mx-4 md:mx-15">
-  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex flex-col md:flex-row bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden">
-    <div className="flex-none w-full md:w-1/3">
+  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden">
+    <div className="flex-none w-1/3">
       <Image 
         src={Helmet}
         alt="Helmet"
         className="object-cover h-full w-full"
       />
     </div>
-    <div className="flex-grow md:pr-4 text-black text-xs justify-center text-right place-items-center">
+    <div className="flex-grow pr-4 text-black text-xs justify-center text-right place-items-center">
       <p className="my-2 py-4">
         Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.
       </p>
     </div>
   </div>
-  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex flex-col md:flex-row-reverse bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden mt-6">
-    <div className="flex-none w-full md:w-1/3">
+  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex flex-col md:flex-row-reverse mt-6 bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden">
+    <div className="flex-none w-1/3">
       <Image 
         src={Helmet}
         alt="Helmet"
         className="object-cover h-full w-full"
       />
     </div>
-    <div className="flex-grow md:pl-4 text-black text-xs justify-center text-left place-items-center">
+    <div className="flex-grow pl-4 text-black text-xs justify-center text-left place-items-center">
       <p className="my-2 py-4">
         Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.
       </p>
