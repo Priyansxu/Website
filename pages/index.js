@@ -69,11 +69,11 @@ export default function Page() {
         <Image 
           src={Helmet}
           alt="Helmet"
-          className="object-cover"
+          className="object-cover h-full w-full"
         />
       </div>
-      <div className="flex-grow px-4 text-black text-sm justify-center text-center">
-        <p className="my-8 py-8">
+      <div className="flex-grow pr-4 text-black text-sm justify-center text-center">
+        <p className="my-8 py-4">
           Your paragraph content goes here. This text will be aligned to the right of the image.
         </p>
       </div>
