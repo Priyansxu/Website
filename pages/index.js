@@ -63,7 +63,7 @@ export default function Page() {
             />
           </div>
         </section>
-        <section className="mt-6 mx-4 md:mx-10">
+        <section className="mt-6 mb-6 mx-4 md:mx-10">
 <div className="rounded bg-gradient-to-br from-[#f5f5f5] to-[#d5d5d5] flex items-center justify-center">
             <div className="relative w-1/2 h-48 md:h-full">
               <Image
@@ -71,11 +71,10 @@ export default function Page() {
                 alt="Helmet"
                 layout="fill"
                 objectFit="contain"
-                className="rounded"
               />
             </div>
             <div className="w-1/2 flex items-center justify-center">
-              <p className="text-sm text-gray-700 text-center md:text-left">
+              <p className="text-sm text-gray-700 text-left md:text-left">
                 This is a paragraph text that is displayed on the right side of the image. You can customize this text to include any content you like.
               </p>
             </div>
