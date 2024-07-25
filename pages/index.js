@@ -141,12 +141,12 @@ export default function Page() {
             </div>
           </motion.div>
           <motion.div
-            className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60 backdrop-blur-sm z-20"
+            className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
           >
-            <div className="flex-grow pl-4 text-black text-xs flex items-center justify-center">
+            <div className="flex-grow pl-4 text-black text-xs flex items-center justify-center w-1/3">
               <motion.p
                 className="my-2 py-4 mx-4"
                 initial="hidden"
