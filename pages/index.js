@@ -122,12 +122,12 @@ export default function Page() {
               <Image
                 src={Helmet}
                 alt="Helmet"
-                className="object-contain object-cover h-full w-full blur-xs"
+                className="object-contain h-full w-full blur-xs"
               />
             </motion.div>
             <div className="flex-grow pr-4 text-black text-xs flex items-center justify-center text-right">
               <motion.p
-                className="my-2 py-4 mx-4"
+                className="py-4 mx-4"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={letterVariantsSecondSection}
