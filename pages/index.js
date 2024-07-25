@@ -55,7 +55,7 @@ export default function Page() {
             ))}
           </motion.p>
           <div className="flex justify-center items-center relative mt-6">
-     <div className="absolute inset-0 backdrop-blur-md p-6 z-20">
+     <div className="absolute inset-0 backdrop-blur-md p-6 my-4 z-20">
     </div>
             <Image
               src={ElementX}
@@ -66,8 +66,8 @@ export default function Page() {
             />
           </div>
         </section>
-        <section className="mt-6">
-         <div className="h-screen bg-gradient-to-br from-[#f5f5f5] to-[#d5d5d5] flex items-center justify-center">
+        <section className="mt-6 mx-6">
+         <div className="rounded bg-gradient-to-br from-[#f5f5f5] to-[#d5d5d5] flex items-center justify-center">
       <div className="flex w-3/4 h-1/2">
         <div className="relative w-1/2 h-full">
           <Image
