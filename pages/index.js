@@ -160,17 +160,6 @@ export default function Page() {
                 ))}
               </motion.p>
             </div>
-            <motion.div
-              className="flex-none w-1/3"
-              initial="hidden"
-              animate={isInView ? "visible" : "hidden"}
-            >
-              <Image
-                src={ElementX}
-                alt="Element"
-                className="object-cover h-full w-full z-10"
-              />
-            </motion.div>
           </motion.div>
         </section>
       </main>
