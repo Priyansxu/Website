@@ -64,7 +64,7 @@ export default function Page() {
           </div>
         </section>
      <section className="my-6 mx-4 md:mx15">
-<div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-br from-[#d3d3d3] via-[#e0e0e0] to-[#bfbfbf] border border-gradient-to-br from-[#cdcdcd] via-[#f0f0f0] to-[#e0e0e0]"> rounded overflow-hidden">
+<div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-br from-[#d3d3d3] via-[#e0e0e0] to-[#bfbfbf] border border-gradient-to-br from-[#cdcdcd] via-[#f0f0f0] to-[#e0e0e0] rounded overflow-hidden">
       <div className="flex-none w-1/3">
         <Image 
           src={Helmet}
