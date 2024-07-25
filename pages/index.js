@@ -32,10 +32,15 @@ export default function Page() {
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black relative">
       <main className="pt-20">
         <section className="p-8 text-center">
-          <h1
-            className="text-4xl font-bold text-black bg-clip-text pb-3">
-            Priyanshu
-          </h1>
+          <motion.h1
+      className="text-4xl font-bold text-black bg-clip-text pb-3"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      whileHover={{ scale: 1.1 }}
+    >
+      Priyanshu
+    </motion.h1>
           <motion.p
             className="mt-4 text-lg font-spaceMono text-gray-600"
             initial="hidden"
