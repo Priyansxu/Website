@@ -64,7 +64,7 @@ export default function Page() {
           </div>
         </section>
      <section className="my-6 mx-4 md:mx15">
-<div className="flex border rounded overflow-hidden">
+<div className="max-w-sm mx-auto sm:max-w-xs md:max-w-sm lg:max-w-md flex border bg-gray-400 rounded overflow-hidden">
       <div className="flex-none w-1/3">
         <Image 
           src={Helmet}
