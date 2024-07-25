@@ -72,7 +72,7 @@ export default function Page() {
           className="object-cover h-full w-full"
         />
       </div>
-      <div className="flex-grow pr-4 text-black text-xs justify-center text-center">
+      <div className="flex-grow pr-4 text-black text-xs justify-center text-left">
         <p className="my-2 py-4">
          Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.
         </p>
