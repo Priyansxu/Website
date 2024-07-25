@@ -59,7 +59,7 @@ export default function Page() {
               alt="Fluid"
               height={150}
               width={600}
-              className="relative z-10"
+              className="relative z-10 w-full max-w-md"
             />
           </div>
         </section>
