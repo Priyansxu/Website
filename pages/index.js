@@ -125,7 +125,7 @@ export default function Page() {
                 className="object-cover h-full w-full"
               />
             </motion.div>
-            <div className="flex-grow pr-4 text-black text-xs flex items-center justify-center">
+            <div className="flex-grow pr-4 text-black text-xs flex items-center justify-center text-right">
               <motion.p
                 className="my-2 py-4 mx-4"
                 initial="hidden"
