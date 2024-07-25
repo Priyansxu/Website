@@ -55,7 +55,7 @@ export default function Page() {
           </motion.p>
           <div className="flex justify-center items-center relative mt-10 blur-lg">
             <Image
-              src="ElementX"
+              src="{ElementX}"
               alt="Element"
               height={150}
               width={150}
