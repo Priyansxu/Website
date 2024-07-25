@@ -13,6 +13,6 @@
     "tailwindcss": "latest",
     "postcss": "latest",
     "framer-motion": "latest",
-    "autoprefixer": "latest"
+    "autoprefixer": "^10.2.6"
   }
 }
