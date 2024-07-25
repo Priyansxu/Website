@@ -73,7 +73,7 @@ export default function Page() {
         />
       </div>
       <div className="flex-grow p-4 text-sm justify-center text-center">
-        <p>
+        <p className="my-4 pt-4">
           Your paragraph content goes here. This text will be aligned to the right of the image.
         </p>
       </div>
