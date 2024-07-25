@@ -106,9 +106,9 @@ export default function Page() {
           </div>
         </section>
 
-        <section ref={secondSectionRef} className="flex flex-col md:flex-row my-6 mx-4 md:mx-15 gap-2">
+        <section ref={secondSectionRef} className="flex my-4">
           <motion.div
-            className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60"
+            className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black shadow-md overflow-hidden w-full h-85 md:h-60"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
@@ -139,39 +139,6 @@ export default function Page() {
                 ))}
               </motion.p>
             </div>
-          </motion.div>
-          <motion.div
-            className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60"
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            variants={divVariants}
-          >
-            <div className="flex-grow pl-4 text-black text-xs flex items-center justify-center">
-              <motion.p
-                className="my-2 py-4 mx-4"
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-                variants={letterVariantsSecondSection}
-              >
-                {secondSectionText.split("").map((char, index) => (
-                  <motion.span key={index} variants={letterVariantsSecondSection}>
-                    {char}
-                  </motion.span>
-                ))}
-              </motion.p>
-            </div>
-      <motion.div
-              className="flex-none items-center w-1/3"
-              initial="hidden"
-              animate={isInView ? "visible" : "hidden"}
-              variants={imageVariants}
-            >
-              <Image
-                src={ElementX}
-                alt="X"
-                className="object-cover blur-sm h-full"
-              />
-            </motion.div>
           </motion.div>
         </section>
       </main>
