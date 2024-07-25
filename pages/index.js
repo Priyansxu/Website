@@ -55,8 +55,7 @@ export default function Page() {
             ))}
           </motion.p>
           <div className="flex justify-center items-center relative mt-6">
-     <div className="absolute inset-0 backdrop-blur-md p-6 z-20">
-    </div>
+            <div className="absolute inset-0 backdrop-blur-md p-6 z-20"></div>
             <Image
               src={ElementX}
               alt="Element"
@@ -67,24 +66,24 @@ export default function Page() {
           </div>
         </section>
         <section className="mt-6 mx-6">
-         <div className="rounded bg-gradient-to-br from-[#f5f5f5] to-[#d5d5d5] flex items-center justify-center">
-      <div className="flex w-3/4 h-1/2">
-        <div className="relative w-1/2 h-full">
-          <Image
-            src={Helmet}
-            alt="Helmet"
-            layout="fill"
-            objectFit="contain"
-          />
-        </div>
-        <div className="w-1/2 flex items-center justify-center">
-          <p className="text-sm text-gray-700">
-            This is a paragraph text that is displayed on the right side of the image. You can customize this text to include any content you like.
-          </p>
-        </div>
-      </div>
-    </div>
-    </section>
+          <div className="rounded bg-gradient-to-br from-[#f5f5f5] to-[#d5d5d5] flex items-center justify-center p-8">
+            <div className="flex w-full max-w-4xl h-96">
+              <div className="relative w-1/2 h-full">
+                <Image
+                  src={Helmet}
+                  alt="Helmet"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
+              <div className="w-1/2 flex items-center justify-center">
+                <p className="text-sm text-gray-700 mx-6">
+                  This is a paragraph text that is displayed on the right side of the image. You can customize this text to include any content you like.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
