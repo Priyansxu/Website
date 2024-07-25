@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import ElementX from "../public/element-x.png";
+import Fluid from "../public/fluid.png";
 import Helmet from "../public/helmet.png";
 
 const paragraphVariants = {
@@ -55,10 +55,10 @@ export default function Page() {
           <div className="flex justify-center items-center relative mt-6">
             <div className="absolute inset-0 backdrop-blur-md p-6 z-20"></div>
             <Image
-              src={ElementX}
-              alt="Element"
+              src={Fluid}
+              alt="Fluid"
               height={150}
-              width={150}
+              width={400}
               className="relative z-10"
             />
           </div>
