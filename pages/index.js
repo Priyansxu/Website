@@ -118,7 +118,7 @@ export default function Page() {
               />
             </motion.div>
             <motion.div
-              className="flex-grow pr-4 text-black text-xs flex items-center justify-center text-center p-4 my-4"
+              className="flex-grow pr-4 text-black text-xs flex items-center justify-center text-center p-4"
               initial="hidden"
               animate="visible"
               variants={paragraphVariants}
@@ -139,7 +139,7 @@ export default function Page() {
             variants={divVariants}
           >
             <motion.div
-              className="flex-grow pl-4 text-black text-xs flex items-center justify-center text-center p-4 my-4"
+              className="flex-grow pl-4 text-black text-xs flex items-center justify-center text-center p-4"
               initial="hidden"
               animate="visible"
               variants={paragraphVariants}
