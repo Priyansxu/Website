@@ -58,6 +58,7 @@ export default function Page() {
               alt="Element X"
               height={150}
               width={150}
+              className="blur-md"
             />
           </div>
         </section>
