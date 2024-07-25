@@ -72,7 +72,7 @@ export default function Page() {
           className="object-cover h-full w-full"
         />
       </div>
-      <div className="flex-grow p-4 text-sm justify-center text-center">
+      <div className="flex-grow p-4 text-gray-500 text-sm justify-center text-center">
         <p className="my-8 py-8">
           Your paragraph content goes here. This text will be aligned to the right of the image.
         </p>
