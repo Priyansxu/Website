@@ -108,7 +108,7 @@ export default function Page() {
 
         <section ref={secondSectionRef} className="flex my-4">
           <motion.div
-            className="w-full h-85 md:h-40 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black shadow-md overflow-hidden"
+            className="w-full h-85 md:h-100 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black shadow-md overflow-hidden"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
@@ -122,7 +122,7 @@ export default function Page() {
               <Image
                 src={Helmet}
                 alt="Helmet"
-                className="object-contain h-full w-full blur-xs"
+                className="object-contain object-cover h-full w-full blur-xs"
               />
             </motion.div>
             <div className="flex-grow pr-4 text-black text-xs flex items-center justify-center text-right">
