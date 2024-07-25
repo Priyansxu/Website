@@ -41,7 +41,7 @@ export default function Page() {
             Priyanshu
           </motion.h1>
           <motion.p
-            className="mt-4 text-lg font-mono text-gray-600"
+            className="mt-4 text-lg font-spaceMono text-gray-600"
             initial="hidden"
             animate="visible"
             variants={paragraphVariants}
