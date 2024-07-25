@@ -24,6 +24,39 @@ const letterVariants = {
   },
 };
 
+const letterVariantsSecondSection = {
+  hidden: { opacity: 0, y: -20, scale: 1.5 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
+
+const imageVariants = {
+  hidden: { filter: "blur(10px)" },
+  visible: {
+    filter: "blur(0px)",
+    transition: {
+      duration: 2,
+    },
+  },
+};
+
+const divVariants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 2,
+    },
+  },
+};
+
 export default function Page() {
   const paragraphText =
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
@@ -33,14 +66,14 @@ export default function Page() {
       <main className="pt-20">
         <section className="p-8 text-center">
           <motion.h1
-      className="text-4xl font-bold text-black bg-clip-text pb-3"
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      whileHover={{ scale: 1.1 }}
-    >
-      Priyanshu
-    </motion.h1>
+            className="text-4xl font-bold text-black bg-clip-text pb-3"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            whileHover={{ scale: 1.1 }}
+          >
+            Priyanshu
+          </motion.h1>
           <motion.p
             className="mt-4 text-lg font-spaceMono text-gray-600"
             initial="hidden"
@@ -64,38 +97,76 @@ export default function Page() {
             />
           </div>
         </section>
-   
-   <section className="flex flex-col md:flex-row my-6 mx-4 md:mx-15 gap-2">
-  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60">
-    <div className="flex-none w-1/3">
-      <Image 
-        src={Helmet}
-        alt="Helmet"
-        className="object-cover h-full w-full"
-      />
-    </div>
-    <div className="flex-grow pr-4 text-black text-xs justify-center text-right place-items-center">
-      <p className="my-2 py-4">
-        Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.
-      </p>
-    </div>
-  </div>
-  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60">
- <div className="flex-grow pl-4 text-black text-xs justify-center text-left place-items-center">
-      <p className="my-2 py-4">
-        Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.
-      </p>
-    </div>
-    <div className="flex-none w-1/3">
-      <Image 
-        src={Helmet}
-        alt="Helmet"
-        className="object-cover h-full w-full"
-      />
-    </div>
-</div>
-</section>
+
+        <section className="flex flex-col md:flex-row my-6 mx-4 md:mx-15 gap-2">
+          <motion.div
+            className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60"
+            initial="hidden"
+            animate="visible"
+            variants={divVariants}
+          >
+            <motion.div
+              className="flex-none w-1/3"
+              initial="hidden"
+              animate="visible"
+              variants={imageVariants}
+            >
+              <Image
+                src={Helmet}
+                alt="Helmet"
+                className="object-cover h-full w-full"
+              />
+            </motion.div>
+            <motion.div
+              className="flex-grow pr-4 text-black text-xs justify-center text-right place-items-center"
+              initial="hidden"
+              animate="visible"
+              variants={paragraphVariants}
+            >
+              {"Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity."
+                .split("")
+                .map((char, index) => (
+                  <motion.span key={index} variants={letterVariantsSecondSection}>
+                    {char}
+                  </motion.span>
+                ))}
+            </motion.div>
+          </motion.div>
+          <motion.div
+            className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60"
+            initial="hidden"
+            animate="visible"
+            variants={divVariants}
+          >
+            <motion.div
+              className="flex-grow pl-4 text-black text-xs justify-center text-left place-items-center"
+              initial="hidden"
+              animate="visible"
+              variants={paragraphVariants}
+            >
+              {"Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity."
+                .split("")
+                .map((char, index) => (
+                  <motion.span key={index} variants={letterVariantsSecondSection}>
+                    {char}
+                  </motion.span>
+                ))}
+            </motion.div>
+            <motion.div
+              className="flex-none w-1/3"
+              initial="hidden"
+              animate="visible"
+              variants={imageVariants}
+            >
+              <Image
+                src={Helmet}
+                alt="Helmet"
+                className="object-cover h-full w-full"
+              />
+            </motion.div>
+          </motion.div>
+        </section>
       </main>
     </div>
   );
-}
+} 
