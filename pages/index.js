@@ -55,7 +55,7 @@ export default function Page() {
             ))}
           </motion.p>
           <div className="flex justify-center items-center relative mt-6">
-     <div className="absolute inset-0 backdrop-blur-md p-6 my-4 z-20">
+     <div className="absolute inset-0 backdrop-blur-md p-6 z-20">
     </div>
             <Image
               src={ElementX}
@@ -78,7 +78,7 @@ export default function Page() {
           />
         </div>
         <div className="w-1/2 flex items-center justify-center">
-          <p className="text-xl text-gray-700">
+          <p className="text-sm text-gray-700">
             This is a paragraph text that is displayed on the right side of the image. You can customize this text to include any content you like.
           </p>
         </div>
