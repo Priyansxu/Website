@@ -35,7 +35,7 @@ const headingLetterVariants = {
     x: 0,
     filter: "blur(0px)",
     transition: {
-      duration: 0.8,
+      duration: 2,
     },
   },
 };
