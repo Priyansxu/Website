@@ -64,7 +64,7 @@ export default function Page() {
           </div>
         </section>
      <section className="my-6 mx-4 md:mx15">
-<div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-br from-[#d0d0d0] via-[#bebebe] to-[#a5a5a5] border border-[#f5f5f5] rounded drop-shadow-xl overflow-hidden">
+<div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-[#a5a5a5] border rounded shadow-md overflow-hidden">
       <div className="flex-none w-1/3">
         <Image 
           src={Helmet}
@@ -73,8 +73,8 @@ export default function Page() {
         />
       </div>
       <div className="flex-grow pr-4 text-black text-sm justify-center text-center">
-        <p className="my-8 py-4">
-          Your paragraph content goes here. This text will be aligned to the right of the image.
+        <p className="my-8 py-8">
+         Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.
         </p>
       </div>
     </div> 
