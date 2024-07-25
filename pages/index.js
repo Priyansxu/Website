@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import Fluid from "../public/fluid.png";
 import Helmet from "../public/helmet.png";
+import ElementX from "../public/elementx.png";
 
 const paragraphVariants = {
   hidden: { opacity: 0 },
@@ -61,6 +62,9 @@ const divVariants = {
 export default function Page() {
   const paragraphText =
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
+
+  const secondSectionText =
+    "Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.";
 
   const secondSectionRef = useRef(null);
   const isInView = useInView(secondSectionRef, { once: true });
@@ -121,14 +125,14 @@ export default function Page() {
                 className="object-cover h-full w-full"
               />
             </motion.div>
-            <div className="flex-grow pr-4 text-black text-xs flex items-center justify-center text-right">
+            <div className="flex-grow pr-4 text-black text-xs flex items-center justify-center">
               <motion.p
                 className="my-2 py-4 mx-4"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
-                variants={paragraphVariants}
+                variants={letterVariantsSecondSection}
               >
-                {"Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.".split("").map((char, index) => (
+                {secondSectionText.split("").map((char, index) => (
                   <motion.span key={index} variants={letterVariantsSecondSection}>
                     {char}
                   </motion.span>
@@ -137,19 +141,19 @@ export default function Page() {
             </div>
           </motion.div>
           <motion.div
-            className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60"
+            className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-150 h-85 md:w-100 md:h-60 backdrop-blur-sm z-20"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
           >
-            <div className="flex-grow pl-4 text-black text-xs flex items-center justify-center text-left">
+            <div className="flex-grow pl-4 text-black text-xs flex items-center justify-center">
               <motion.p
                 className="my-2 py-4 mx-4"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
-                variants={paragraphVariants}
+                variants={letterVariantsSecondSection}
               >
-                {"Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.".split("").map((char, index) => (
+                {secondSectionText.split("").map((char, index) => (
                   <motion.span key={index} variants={letterVariantsSecondSection}>
                     {char}
                   </motion.span>
@@ -160,12 +164,11 @@ export default function Page() {
               className="flex-none w-1/3"
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
-              variants={imageVariants}
             >
               <Image
-                src={Helmet}
-                alt="Helmet"
-                className="object-cover h-full w-full"
+                src={ElementX}
+                alt="Element"
+                className="object-cover h-full w-full z-10"
               />
             </motion.div>
           </motion.div>
