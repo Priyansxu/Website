@@ -108,7 +108,7 @@ export default function Page() {
 
         <section ref={secondSectionRef} className="flex my-4">
           <motion.div
-            className="w-full h-85 md:h-100 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black shadow-md overflow-hidden"
+            className="w-full h-85 md:h-90 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black shadow-md overflow-hidden"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
@@ -125,12 +125,12 @@ export default function Page() {
                 className="object-contain object-cover h-full w-full blur-xs"
               />
             </motion.div>
-            <div className="flex-grow pr-4 text-black text-xs md:text-2xl flex items-center justify-center text-right">
+            <div className="flex-grow pr-6 text-black text-xs md:text-2xl flex items-center justify-center text-right">
               <motion.p
                 className="py-4 mx-4"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
-                variants={letterVariantsSecondSection}
+                variants={paragraphVariants}
               >
                 {secondSectionText.split("").map((char, index) => (
                   <motion.span key={index} variants={letterVariantsSecondSection}>
