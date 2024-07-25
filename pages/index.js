@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import ElementX from "../public/element-x.png";
 
 const paragraphVariants = {
   hidden: { opacity: 0 },
@@ -57,7 +56,7 @@ export default function Page() {
      <div className="absolute inset-0 backdrop-blur-md p-4 z-20">
     </div>
             <Image
-              src={ElementX}
+              src="./element-x.png"
               alt="Element"
               height={150}
               width={150}
