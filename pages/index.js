@@ -24,21 +24,46 @@ const letterVariants = {
   },
 };
 
+const headingLetterVariants = {
+  hidden: (direction) => ({
+    opacity: 0,
+    x: direction === "left" ? -100 : 100,
+    filter: "blur(10px)",
+  }),
+  visible: {
+    opacity: 1,
+    x: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
+
+const directions = ["left", "right", "left", "right", "left", "right", "left", "right"];
+
 export default function Page() {
   const paragraphText =
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
 
   return (
-   <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black relative">
+    <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black relative">
       <main className="pt-20">
         <section className="p-8 text-center">
           <motion.h1
             className="text-4xl font-bold text-black bg-clip-text pb-3"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            initial="hidden"
+            animate="visible"
           >
-            Priyanshu
+            {"Priyanshu".split("").map((char, index) => (
+              <motion.span
+                key={index}
+                custom={directions[index % directions.length]}
+                variants={headingLetterVariants}
+              >
+                {char}
+              </motion.span>
+            ))}
           </motion.h1>
           <motion.p
             className="mt-4 text-lg font-spaceMono text-gray-600"
