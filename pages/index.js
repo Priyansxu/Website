@@ -66,7 +66,7 @@ export default function Page() {
             />
           </div>
         </section>
-        <section className="mt-10 p-8"
+        <section className="mt-10 p-8">
          <div className="h-screen bg-gradient-to-br from-[#f5f5f5] to-[#d5d5d5] flex items-center justify-center">
       <div className="flex w-3/4 h-1/2">
         <div className="relative w-1/2 h-full">
