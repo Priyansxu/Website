@@ -74,7 +74,7 @@ export default function Page() {
                 className="rounded"
               />
             </div>
-            <div className="w-1/2 flex items-center justify-center p-4">
+            <div className="w-1/2 flex items-center justify-center">
               <p className="text-sm text-gray-700 text-center md:text-left">
                 This is a paragraph text that is displayed on the right side of the image. You can customize this text to include any content you like.
               </p>
