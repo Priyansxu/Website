@@ -63,8 +63,8 @@ export default function Page() {
             />
           </div>
         </section>
-     <section className="flex flex-col md:flex-row my-6 mx-4 md:mx-15">
-  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-full h-60">
+     <section className="flex flex-col md:flex-row my-6 mx-4 md:mx-15 gap-4">
+  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-48 h-60">
     <div className="flex-none w-1/3">
       <Image 
         src={Helmet}
@@ -78,7 +78,7 @@ export default function Page() {
       </p>
     </div>
   </div>
-  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl mt-6 bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-full h-60">
+  <div className="max-w-md mx-auto sm:max-w-lg md:max-w-lg lg:max-w-xl xl:max-w-2xl mt-6 bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black rounded shadow-md overflow-hidden w-48 h-60">
     <div className="flex-none w-1/3">
       <Image 
         src={Helmet}
