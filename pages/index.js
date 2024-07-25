@@ -33,7 +33,7 @@ export default function Page() {
       <main className="pt-20">
         <section className="p-8 text-center">
           <motion.h1
-            className="text-4xl font-bold text-black bg-clip-text"
+            className="text-4xl font-bold text-black bg-clip-text mb-3"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -72,7 +72,7 @@ export default function Page() {
           className="object-cover h-full w-full"
         />
       </div>
-      <div className="flex-grow p-4 text-gray-500 text-sm justify-center text-center">
+      <div className="flex-grow p-4 text-black text-sm justify-center text-center">
         <p className="my-8 py-8">
           Your paragraph content goes here. This text will be aligned to the right of the image.
         </p>
