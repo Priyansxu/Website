@@ -63,7 +63,7 @@ const divVariants = {
 const SocialMediaDiv = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-const toggleExpand = () => {
+  const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
 
