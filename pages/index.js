@@ -4,7 +4,7 @@ import Image from "next/image";
 import Fluid from "../public/fluid.png";
 import Helmet from "../public/helmet.png";
 import ElementX from "../public/elementx.png";
-import { TfiInstagram, TfiTwitterAlt, TfiGithub} from "react-icons/tfi";
+import { TfiInstagram, TfiTwitterAlt, TfiGithub } from "react-icons/tfi";
 
 const paragraphVariants = {
   hidden: { opacity: 0 },
@@ -143,8 +143,7 @@ export default function Page() {
           </motion.div>
         </section>
 
-         <motion.p
-                className="p-6 mx-6 md-mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
+     <motion.p className="p-6 mx-6 md-mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={paragraphVariants}
@@ -154,16 +153,13 @@ export default function Page() {
                     {char}
                   </motion.span>
                 ))}
-              </motion.p>
+      </motion.p>
 
     <section ref={secondSectionRef} className="flex my-4">
-          <motion.div className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-60 items-center justify-center gap-1 rounded-lg bg-black text-[#e5e5e5] px-1 py-1 shadow-lg backdrop-blur-xl sm:w-90 md:p-2 lg:w-100"
-     initial="hidden"
-     animate={isInView ? "visible" : "hidden"}
-          >
-          
-     </motion.div>
- </section>
+          <div className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-60 items-center justify-center gap-1 rounded-lg bg-black text-[#e5e5e5] px-1 py-1 shadow-lg backdrop-blur-xl sm:w-90 md:p-2 lg:w-100">
+       
+     </div>
+   </section>
       </main>
     </div>
   );
