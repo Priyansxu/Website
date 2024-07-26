@@ -19,7 +19,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462] relative overflow-hidden">
         <Particles
-        className="absolute inset-0 z-10 animate-fade-in blur-sm"
+        className="absolute inset-0 z-10 animate-fade-in invert blur-sm"
         quantity={100}
       />
       <main className="pt-20 relative">
