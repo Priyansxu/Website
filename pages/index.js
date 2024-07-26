@@ -71,7 +71,7 @@ export default function Page() {
   const isInView = useInView(secondSectionRef, { once: true });
 
   return (
-    <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-[#4B5462] relative">
+    <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462] relative">
       <main className="pt-20">
         <section className="p-8 text-center">
           <motion.h1
