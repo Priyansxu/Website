@@ -109,7 +109,7 @@ export default function Page() {
 
         <section ref={secondSectionRef} className="flex my-4">
           <motion.div
-            className="mx-4 md:mx-none w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border border-[#4B5462] md:border-none shadow-md overflow-hidden"
+            className="mx-6 md:mx-none w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border border-[#4B5462] md:border-none shadow-md overflow-hidden"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
@@ -144,7 +144,7 @@ export default function Page() {
         </section>
 
          <motion.p
-                className="p-6 mx-4 font-celtG text-5xl md:text-7xl"
+                className="p-6 mx-7 md:mx-10 font-celtG text-5xl md:text-7xl"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={paragraphVariants}
