@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         spaceMono: ['SpaceMono', 'monospace'],
+        celtG: ['CeltG', 'sans-serif'],
       },
     },
   },
