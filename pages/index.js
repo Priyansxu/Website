@@ -109,7 +109,7 @@ export default function Page() {
 
         <section ref={secondSectionRef} className="flex my-4">
           <motion.div
-            className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border border-[#4B5462] md:border-none shadow-md overflow-hidden"
+            className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-md overflow-hidden"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
