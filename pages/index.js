@@ -157,28 +157,11 @@ export default function Page() {
               </motion.p>
 
     <section ref={secondSectionRef} className="flex my-4">
-          <motion.div className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-60 items-center justify-center gap-1 rounded-lg bg-black text-[#e5e5e5] px-1 py-1 shadow-lg backdrop-blur-md sm:w-90 md:p-2 lg:w-100"
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
+          <motion.div className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-60 items-center justify-center gap-1 rounded-lg bg-black text-[#e5e5e5] px-1 py-1 shadow-lg backdrop-blur-xl sm:w-90 md:p-2 lg:w-100"
+     initial="hidden"
+     animate={isInView ? "visible" : "hidden"}
           >
-          <a     href="https://www.twitter.com/priyansxu_gupta"
-            target="_blank"
-            className=" flex align-middle items-center space-x-1 w-max "
-          >
-            <TfiTwitterAlt className="p-2 w-8" />
-          </a>
-       <a     href="https://www.instagram.com/priyansxu_gupta"
-            target="_blank"
-            className=" flex align-middle items-center space-x-1 w-max "
-          >
-            <TfiInstagram className="p-2 w-8" />
-          </a>
-       <a     href="https://www.github.com/priyansxu"
-            target="_blank"
-            className=" flex align-middle items-center space-x-1 w-max "
-          >
-            <TfiGithub className="p-2 w-8" />
-          </a>
+          
      </motion.div>
  </section>
       </main>
