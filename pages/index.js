@@ -163,7 +163,7 @@ export default function Page() {
       </main>
 
       <motion.div
-        className="fixed bottom-10 left-0 right-0 z-50 my-0 mx-auto flex items-center justify-center gap-1 rounded-lg bg-black text-[#e5e5e5] shadow-lg backdrop-blur-xl"
+        className="fixed bottom-10 left-0 right-0 z-50 my-0 mx-4 flex items-center justify-center gap-1 rounded-lg bg-black text-[#e5e5e5] shadow-lg backdrop-blur-xl"
         initial={{ padding: '10px 20px' }}
         animate={{
           padding: isExpanded ? '20px 40px' : '10px 20px',
