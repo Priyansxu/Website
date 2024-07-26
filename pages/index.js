@@ -158,7 +158,7 @@ export default function Page() {
 
     <section ref={secondSectionRef} className="flex my-4">
           <motion.div
-            className="w-full h-85 md:h-90 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black shadow-md overflow-hidden"
+            className="w-full p-4 h-95 md:h-90 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black shadow-md overflow-hidden items-center justify-center"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
@@ -167,10 +167,19 @@ export default function Page() {
             target="_blank"
             className=" flex align-middle items-center space-x-1 w-max "
           >
-            <TfiTwitterAlt className="text-[#518FC7] h-3 w-3 md:h-4 md:w-4 " />
-            <h5 className="text-transparent text-[#2498fe]">
-              priyansxu_gupta
-            </h5>
+            <TfiTwitterAlt className="text-black p-4 h-20 w-20" />
+          </a>
+       <a     href="https://www.instagram.com/priyansxu_gupta"
+            target="_blank"
+            className=" flex align-middle items-center space-x-1 w-max "
+          >
+            <TfiInstagram className="text-black p-4 h-20 w-20" />
+          </a>
+       <a     href="https://www.github.com/priyansxu"
+            target="_blank"
+            className=" flex align-middle items-center space-x-1 w-max "
+          >
+            <TfiGithub className="text-black p-4 h-20 w-20" />
           </a>
      </motion.div>
  </section>
