@@ -143,7 +143,7 @@ export default function Page() {
         </section>
    <section>
          <motion.p
-                className="py-6 mx-4 font-celtG text-3xl xl:text-4xl"
+                className="py-6 mx-4 font-celtG text-3xl"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={paragraphVariants}
