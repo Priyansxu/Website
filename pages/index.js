@@ -3,7 +3,6 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import Fluid from "../public/fluid.png";
 import Helmet from "../public/helmet.png";
-import ElementX from "../public/elementx.png";
 import { TfiInstagram, TfiTwitterAlt, TfiGithub } from "react-icons/tfi";
 
 const paragraphVariants = {
@@ -60,14 +59,13 @@ const divVariants = {
   },
 };
 
+export default function Page() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
 
-
-export default function Page() {
   const paragraphText =
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
 
@@ -150,41 +148,40 @@ export default function Page() {
           </motion.div>
         </section>
 
-     <motion.p className="p-6 mx-6 md-mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-                variants={paragraphVariants}
-              >
-                {"I'm Vengeance".split("").map((char, index) => (
-                  <motion.span key={index} variants={letterVariantsSecondSection}>
-                    {char}
-                  </motion.span>
-                ))}
-      </motion.p>
-
-    <section ref={secondSectionRef} className="flex my-4">
-          <motion.div
-      className="fixed bottom-10 left-0 right-0 z-50 my-0 mx-auto flex items-center justify-center gap-1 rounded-lg bg-black text-[#e5e5e5] shadow-lg backdrop-blur-xl"
-      initial={{ padding: '10px 20px' }}
-      animate={{
-        padding: isExpanded ? '20px 40px' : '10px 20px',
-        width: isExpanded ? '250px' : '150px'
-      }}
-      transition={{ duration: 0.5, ease: 'easeInOut' }}
-      onClick={toggleExpand}
-    >
-      {!isExpanded ? (
-        <span>SOCIAL</span>
-      ) : (
-        <div className="flex gap-2">
-          <TfiInstagram size={24} />
-          <TfiTwitterAlt size={24} />
-          <TfiGithub size={24} />
-        </div>
-      )}
-    </motion.div>
-   </section>
+        <motion.p
+          className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={paragraphVariants}
+        >
+          {"I'm Vengeance".split("").map((char, index) => (
+            <motion.span key={index} variants={letterVariantsSecondSection}>
+              {char}
+            </motion.span>
+          ))}
+        </motion.p>
       </main>
+
+      <motion.div
+        className="fixed bottom-10 left-0 right-0 z-50 my-0 mx-auto flex items-center justify-center gap-1 rounded-lg bg-black text-[#e5e5e5] shadow-lg backdrop-blur-xl"
+        initial={{ padding: '10px 20px' }}
+        animate={{
+          padding: isExpanded ? '20px 40px' : '10px 20px',
+          width: isExpanded ? '250px' : '150px'
+        }}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}
+        onClick={toggleExpand}
+      >
+        {!isExpanded ? (
+          <span>SOCIAL</span>
+        ) : (
+          <div className="flex gap-2">
+            <TfiInstagram size={24} />
+            <TfiTwitterAlt size={24} />
+            <TfiGithub size={24} />
+          </div>
+        )}
+      </motion.div>
     </div>
   );
 }
