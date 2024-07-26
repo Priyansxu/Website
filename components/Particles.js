@@ -6,7 +6,6 @@ export default function Particles({
         staticity = 50,
         ease = 50,
         refresh = false,
-        color = "rgba(169, 169, 169, ALPHA)" 
 }) {
         const canvasRef = useRef(null);
         const canvasContainerRef = useRef(null);
@@ -73,7 +72,6 @@ export default function Particles({
                         dx,
                         dy,
                         magnetism,
-                        color
                 };
         };
 
@@ -83,7 +81,7 @@ export default function Particles({
                         context.current.translate(translateX, translateY);
                         context.current.beginPath();
                         context.current.arc(x, y, size, 0, 2 * Math.PI);
-                        context.current.fillStyle = circle.color.replace("ALPHA", alpha); 
+                        context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`;
                         context.current.fill();
                         context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
 
@@ -162,7 +160,6 @@ export default function Particles({
                                                 translateX: circle.translateX,
                                                 translateY: circle.translateY,
                                                 alpha: circle.alpha,
-                                                color: circle.color 
                                         },
                                         true,
                                 );
