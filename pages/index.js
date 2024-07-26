@@ -157,7 +157,7 @@ export default function Page() {
               </motion.p>
 
     <section ref={secondSectionRef} className="flex my-4">
-          <motion.div className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-60 items-center justify-center gap-1 rounded-lg bg-[#4b5460] text-[#e5e5e5] px-1 py-1 shadow-lg backdrop-blur-md sm:w-90 md:p-2 lg:w-100"
+          <motion.div className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-60 h-20 items-center justify-center gap-1 rounded-lg bg-[#4b5460] text-[#e5e5e5] px-1 py-1 shadow-lg backdrop-blur-md sm:w-90 md:p-2 lg:w-100"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
