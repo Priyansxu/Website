@@ -59,13 +59,6 @@ const divVariants = {
   },
 };
 
-export default function Page() {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
-
   const paragraphText =
     "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
 
@@ -161,6 +154,22 @@ export default function Page() {
           ))}
         </motion.p>
       </main>
+    </div>
+  );
+}
+
+
+
+
+
+{/* 
+export default function Page() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
 
       <motion.div
         className="fixed bottom-10 left-0 right-0 z-50 my-0 mx-4 flex items-center justify-center gap-1 rounded-lg bg-black text-[#e5e5e5] shadow-lg backdrop-blur-xl"
@@ -182,6 +191,5 @@ export default function Page() {
           </div>
         )}
       </motion.div>
-    </div>
-  );
-}
+*/}
+
