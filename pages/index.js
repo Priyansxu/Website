@@ -3,7 +3,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import Fluid from "../public/fluid.png";
 import Helmet from "../public/helmet.png";
-import { generateStars, generateMeteors } from "../motions/spaceMotions";
+import Particles from "../components/Particles";
 import { Paragraph, Heading, Letter, Img, Div } from "../motions/animationVariants";
 
 const paragraphText =
@@ -18,6 +18,10 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462] relative overflow-hidden">
+        <Particles
+        className="absolute inset-0 z-10 animate-fade-in"
+        quantity={100}
+      />
       <main className="pt-20 relative">
         <section className="p-8 text-center">
           <motion.h1
@@ -41,13 +45,13 @@ export default function HomePage() {
             ))}
           </motion.p>
           <div className="flex justify-center items-center relative mt-6">
-            <div className="absolute inset-0 backdrop-blur-md p-6 z-20"></div>
+            <div className="absolute inset-0 backdrop-blur-md p-6 z-30"></div>
             <Image
               src={Fluid}
               alt="Fluid"
               height={150}
               width={600}
-              className="relative opacity-70 z-10 w-full max-w-md"
+              className="relative opacity-70 z-200 w-full max-w-md"
             />
           </div>
         </section>
