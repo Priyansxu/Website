@@ -33,7 +33,7 @@ export default function HomePage() {
             Priyanshu
           </motion.h1>
           <motion.p
-            className="mt-4 text-lg font-spaceMono text-gray-600"
+            className="mt-4 text-lg font-spaceMono text-gray-600 backdrop-blur-md"
             initial="hidden"
             animate="visible"
             variants={Paragraph}
@@ -58,7 +58,7 @@ export default function HomePage() {
 
         <section ref={secondSectionRef} className="flex my-4">
           <motion.div
-            className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden"
+            className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={Div}
