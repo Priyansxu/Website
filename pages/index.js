@@ -77,8 +77,8 @@ export default function Page() {
 
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462] relative">
-      <main className="pt-30 md:pt-20">
-        <section className="p-8 text-center">
+      <main className="pt-20">
+        <section className="p-15 md:p-8 text-center">
           <motion.h1
             className="text-4xl font-bold text-black bg-clip-text pb-3"
             initial={{ opacity: 0, y: -20 }}
