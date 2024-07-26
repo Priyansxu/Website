@@ -165,10 +165,10 @@ export default function Page() {
           >
           <a     href="https://www.twitter.com/priyansxu_gupta"
             target="_blank"
-            className=" flex align-middle items-center font-jak font-bold space-x-1 w-max "
+            className=" flex align-middle items-center space-x-1 w-max "
           >
-            <TfiTwitterAlt className="text-[#518FC7] dark:text-[#2498fe] h-3 w-3 md:h-4 md:w-4 " />
-            <h5 className="text-transparent dark:text-[#2498fe]">
+            <TfiTwitterAlt className="text-[#518FC7] h-3 w-3 md:h-4 md:w-4 " />
+            <h5 className="text-transparent text-[#2498fe]">
               priyansxu_gupta
             </h5>
           </a>
