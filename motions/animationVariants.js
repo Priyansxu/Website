@@ -1,4 +1,4 @@
-export const paragraphVariants = {
+export const Paragraph = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -8,7 +8,7 @@ export const paragraphVariants = {
   },
 };
 
-export const letterVariants = {
+export const Heading= {
   hidden: { opacity: 0, filter: "blur(10px)" },
   visible: {
     opacity: 1,
@@ -19,7 +19,7 @@ export const letterVariants = {
   },
 };
 
-export const letterVariantsSecondSection = {
+export const Letter = {
   hidden: { opacity: 0, y: -20, scale: 1.5 },
   visible: {
     opacity: 1,
@@ -31,7 +31,7 @@ export const letterVariantsSecondSection = {
   },
 };
 
-export const imageVariants = {
+export const Img = {
   hidden: { filter: "blur(10px)" },
   visible: {
     filter: "blur(0px)",
@@ -41,7 +41,7 @@ export const imageVariants = {
   },
 };
 
-export const divVariants = {
+export const Div = {
   hidden: { opacity: 0, x: -10 },
   visible: {
     opacity: 1,
