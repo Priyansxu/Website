@@ -4,6 +4,7 @@ import Image from "next/image";
 import Fluid from "../public/fluid.png";
 import Helmet from "../public/helmet.png";
 import ElementX from "../public/elementx.png";
+import { TfiInstagram, TfiTwitterAlt, TfiGithub} from "react-icons/tfi";
 
 const paragraphVariants = {
   hidden: { opacity: 0 },
@@ -141,7 +142,7 @@ export default function Page() {
             </div>
           </motion.div>
         </section>
-   <section>
+
          <motion.p
                 className="py-6 mx-4 font-celtG text-3xl"
                 initial="hidden"
@@ -154,7 +155,25 @@ export default function Page() {
                   </motion.span>
                 ))}
               </motion.p>
-    </section>
+
+    <section ref={secondSectionRef} className="flex my-4">
+          <motion.div
+            className="w-full h-85 md:h-90 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black shadow-md overflow-hidden"
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={divVariants}
+          >
+          <a     href="https://www.twitter.com/priyansxu_gupta"
+            target="_blank"
+            className=" flex align-middle items-center font-jak font-bold space-x-1 w-max "
+          >
+            <TfiTwitterAlt className="text-[#518FC7] dark:text-[#2498fe] h-3 w-3 md:h-4 md:w-4 " />
+            <h5 className="text-transparent dark:text-[#2498fe]">
+              priyansxu_gupta
+            </h5>
+          </a>
+     </motion.div>
+ </section>
       </main>
     </div>
   );
