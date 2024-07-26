@@ -24,9 +24,11 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462] relative overflow-hidden">
-      {generateStars()}
-      {generateMeteors()}
-      <main className="pt-20">
+      <main className="pt-20 relative">
+        <div className="absolute inset-0 z-10">
+          {generateStars()}
+          {generateMeteors()}
+        </div>
         <section className="p-8 text-center">
           <motion.h1
             className="text-4xl font-bold text-black bg-clip-text pb-3"
