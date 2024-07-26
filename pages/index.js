@@ -157,28 +157,27 @@ export default function Page() {
               </motion.p>
 
     <section ref={secondSectionRef} className="flex my-4">
-          <motion.div className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-[306px] items-center justify-center gap-1 rounded-lg bg-[#07070a]/90 px-1 py-1 text-[#e4ded7] backdrop-blur-md sm:w-[383.3px] md:p-2 lg:w-[391.3px]"
+          <motion.div className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-[306px] items-center justify-center gap-1 rounded-lg bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] px-1 py-1 backdrop-blur-md sm:w-20 md:p-2 lg:w-30"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            variants={divVariants}
           >
           <a     href="https://www.twitter.com/priyansxu_gupta"
             target="_blank"
             className=" flex align-middle items-center space-x-1 w-max "
           >
-            <TfiTwitterAlt className="p-4 h-20 w-20" />
+            <TfiTwitterAlt className="p-4 h-10 w-10" />
           </a>
        <a     href="https://www.instagram.com/priyansxu_gupta"
             target="_blank"
             className=" flex align-middle items-center space-x-1 w-max "
           >
-            <TfiInstagram className="p-4 h-20 w-20" />
+            <TfiInstagram className="p-4 h-10 w-10" />
           </a>
        <a     href="https://www.github.com/priyansxu"
             target="_blank"
             className=" flex align-middle items-center space-x-1 w-max "
           >
-            <TfiGithub className="p-4 h-20 w-20" />
+            <TfiGithub className="p-4 h-10 w-10" />
           </a>
      </motion.div>
  </section>
