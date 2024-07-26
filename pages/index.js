@@ -157,7 +157,7 @@ export default function Page() {
               </motion.p>
 
     <section ref={secondSectionRef} className="flex my-4">
-          <motion.div className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-[306px] items-center justify-center gap-1 rounded-lg bg-[#07070a]/90 px-1 py-1 text-[#e4ded7] backdrop-blur-md sm:w-[383.3px] md:p-2 lg:w-[391.3px]">
+          <motion.div className="fixed bottom-10 left-0 right-0 z-50 my-0  mx-auto  flex w-[306px] items-center justify-center gap-1 rounded-lg bg-[#07070a]/90 px-1 py-1 text-[#e4ded7] backdrop-blur-md sm:w-[383.3px] md:p-2 lg:w-[391.3px]"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
