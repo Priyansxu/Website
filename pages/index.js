@@ -140,6 +140,18 @@ export default function Page() {
               </motion.p>
             </div>
           </motion.div>
+              <motion.p
+                className="py-4 mx-4 font-celtG text-3xl"
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                variants={paragraphVariants}
+              >
+                {"I'm Vengeance".split("").map((char, index) => (
+                  <motion.span key={index} variants={letterVariantsSecondSection}>
+                    {char}
+                  </motion.span>
+                ))}
+              </motion.p>
         </section>
       </main>
     </div>
