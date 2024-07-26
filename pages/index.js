@@ -1,9 +1,9 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import Fluid from "@/public/fluid.png";
-import Helmet from "@/public/helmet.png";
-import ElementX from "@/public/elementx.png";
+import Fluid from "../public/fluid.png";
+import Helmet from "../public/helmet.png";
+import ElementX from "../public/elementx.png";
 import { TfiInstagram, TfiTwitterAlt, TfiGithub} from "react-icons/tfi";
 
 const paragraphVariants = {
