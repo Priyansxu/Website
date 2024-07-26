@@ -4,13 +4,7 @@ import Image from "next/image";
 import Fluid from "../public/fluid.png";
 import Helmet from "../public/helmet.png";
 import { generateStars, generateMeteors } from "../motions/spaceMotions";
-import { 
-  paragraphVariants, 
-  letterVariants, 
-  letterVariantsSecondSection, 
-  imageVariants, 
-  divVariants 
-} from "../motions/animationVariants";
+import { Paragraph, Heading, Letter, Img, Div } from "../motions/animationVariants";
 
 const paragraphText =
   "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
@@ -25,17 +19,12 @@ export default function HomePage() {
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462] relative overflow-hidden">
       <main className="pt-20 relative">
-        <div className="absolute inset-0 z-10">
-          {generateStars()}
-          {generateMeteors()}
-        </div>
         <section className="p-8 text-center">
           <motion.h1
             className="text-4xl font-bold text-black bg-clip-text pb-3"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            whileHover={{ scale: 1.1 }}
           >
             Priyanshu
           </motion.h1>
@@ -43,10 +32,10 @@ export default function HomePage() {
             className="mt-4 text-lg font-spaceMono text-gray-600"
             initial="hidden"
             animate="visible"
-            variants={paragraphVariants}
+            variants={Paragraph}
           >
             {paragraphText.split("").map((char, index) => (
-              <motion.span key={index} variants={letterVariants}>
+              <motion.span key={index} variants={Heading}>
                 {char}
               </motion.span>
             ))}
@@ -68,13 +57,13 @@ export default function HomePage() {
             className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            variants={divVariants}
+            variants={Div}
           >
             <motion.div
               className="flex-none w-1/3"
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
-              variants={imageVariants}
+              variants={Img}
             >
               <Image
                 src={Helmet}
@@ -87,10 +76,10 @@ export default function HomePage() {
                 className="py-4 mx-4"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
-                variants={paragraphVariants}
+                variants={Paragraph}
               >
                 {secondSectionText.split("").map((char, index) => (
-                  <motion.span key={index} variants={letterVariantsSecondSection}>
+                  <motion.span key={index} variants={Letter}>
                     {char}
                   </motion.span>
                 ))}
@@ -103,10 +92,10 @@ export default function HomePage() {
           className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          variants={paragraphVariants}
+          variants={Paragraph}
         >
           {"I'm Vengeance".split("").map((char, index) => (
-            <motion.span key={index} variants={letterVariantsSecondSection}>
+            <motion.span key={index} variants={Letter}>
               {char}
             </motion.span>
           ))}
