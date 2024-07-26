@@ -140,8 +140,10 @@ export default function Page() {
               </motion.p>
             </div>
           </motion.div>
-              <motion.p
-                className="py-4 mx-4 font-celtG text-3xl"
+        </section>
+   <section>
+         <motion.p
+                className="py-6 mx-4 font-celtG text-3xl"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={paragraphVariants}
@@ -152,7 +154,7 @@ export default function Page() {
                   </motion.span>
                 ))}
               </motion.p>
-        </section>
+    </section>
       </main>
     </div>
   );
