@@ -71,7 +71,7 @@ export default function Page() {
   const isInView = useInView(secondSectionRef, { once: true });
 
   return (
-    <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-black relative">
+    <div className="min-h-screen font-mono bg-gradient-to-br from-[#f5f5f5] via-[#e5e5e5] to-[#d5d5d5] text-[#4B5462] relative">
       <main className="pt-20">
         <section className="p-8 text-center">
           <motion.h1
@@ -126,7 +126,7 @@ export default function Page() {
                 className="object-contain object-cover h-full w-full opacity-60"
               />
             </motion.div>
-            <div className="flex-grow pr-6 text-black text-xs md:text-2xl flex items-center justify-center text-right">
+            <div className="flex-grow pr-6 text-xs md:text-2xl flex items-center justify-center text-right">
               <motion.p
                 className="py-4 mx-4"
                 initial="hidden"
@@ -144,7 +144,7 @@ export default function Page() {
         </section>
 
          <motion.p
-                className="py-6 mx-4 font-celtG text-3xl"
+                className="py-6 mx-4 font-celtG text-5xl md:text-7xl"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={paragraphVariants}
@@ -167,19 +167,19 @@ export default function Page() {
             target="_blank"
             className=" flex align-middle items-center space-x-1 w-max "
           >
-            <TfiTwitterAlt className="text-black p-4 h-20 w-20" />
+            <TfiTwitterAlt className="p-4 h-20 w-20" />
           </a>
        <a     href="https://www.instagram.com/priyansxu_gupta"
             target="_blank"
             className=" flex align-middle items-center space-x-1 w-max "
           >
-            <TfiInstagram className="text-black p-4 h-20 w-20" />
+            <TfiInstagram className="p-4 h-20 w-20" />
           </a>
        <a     href="https://www.github.com/priyansxu"
             target="_blank"
             className=" flex align-middle items-center space-x-1 w-max "
           >
-            <TfiGithub className="text-black p-4 h-20 w-20" />
+            <TfiGithub className="p-4 h-20 w-20" />
           </a>
      </motion.div>
  </section>
