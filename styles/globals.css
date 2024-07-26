@@ -5,6 +5,9 @@
 @font-face {
   font-family: 'SpaceMono';
   src: url('/fonts/SpaceMono-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CeltG';
+  src: url('/fonts/CELTG___.TTF') format('truetype');
 }
