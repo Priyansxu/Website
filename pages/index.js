@@ -158,7 +158,7 @@ export default function Page() {
 
     <section ref={secondSectionRef} className="flex my-4">
           <motion.div
-            className="w-full p-4 h-95 md:h-90 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border-black shadow-md overflow-hidden items-center justify-center"
+            className="rounded-lg mx-4 p-3 w-150 h-95 md:h-90 flex bg-gradient-to-b from-neutral-300 to-[#cdcdcd] border hower:border-black hower:shadow-xl overflow-hidden items-center justify-center"
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={divVariants}
