@@ -1,110 +1,14 @@
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
-import Image from "next/image";
-import Fluid from "../public/fluid.png";
-import Helmet from "../public/helmet.png";
 import Particles from "../components/Particles";
-import Element from "../public/element.png";
-import { Paragraph, Heading, Letter, Img, Div } from "../motions/animationVariants";
-
-const paragraphText =
-  "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
-
-const secondSectionText =
-  "Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.";
+import Header from "../components/Header";
+import Profile from "../components/Profile";
 
 export default function HomePage() {
-  const secondSectionRef = useRef(null);
-  const isInView = useInView(secondSectionRef, { once: true });
-
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462] relative overflow-hidden">
-      <Particles
-        className="absolute inset-0 z-10 animate-fade-in invert"
-        quantity={100}
-      />
+      <Particles quantity={100} />
       <main className="pt-20 relative">
-        <section className="p-8 text-center">
-          <motion.h1
-            className="text-4xl font-bold text-black bg-clip-text pb-3"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >
-            Priyanshu
-          </motion.h1>
-          <motion.p
-            className="mt-4 text-lg font-spaceMono text-gray-600 backdrop-blur-md z-30"
-            initial="hidden"
-            animate="visible"
-            variants={Paragraph}
-          >
-            {paragraphText.split("").map((char, index) => (
-              <motion.span key={index} variants={Heading}>
-                {char}
-              </motion.span>
-            ))}
-          </motion.p>
-          <div className="flex justify-center items-center relative mt-6">
-            <div className="absolute inset-0 backdrop-blur-md p-6 z-30"></div>
-            <Image
-              src={Fluid}
-              alt="Fluid"
-              height={150}
-              width={600}
-              className="relative opacity-70 z-20 w-full max-w-md"
-            />
-          </div>
-        </section>
-
-        <section ref={secondSectionRef} className="flex my-4">
-          <motion.div
-            className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            variants={Div}
-          >
-            <motion.div
-              className="flex-none w-1/3"
-              initial="hidden"
-              animate={isInView ? "visible" : "hidden"}
-              variants={Img}
-            >
-              <Image
-                src={Helmet}
-                alt="Helmet"
-                className="object-contain object-cover h-full w-full opacity-60"
-              />
-            </motion.div>
-            <div className="flex-grow pr-5 text-xs md:text-2xl flex items-center justify-center text-right">
-              <motion.p
-                className="py-4 mx-2"
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-                variants={Paragraph}
-              >
-                {secondSectionText.split("").map((char, index) => (
-                  <motion.span key={index} variants={Letter}>
-                    {char}
-                  </motion.span>
-                ))}
-              </motion.p>
-            </div>
-          </motion.div>
-        </section>
-
-        <motion.p
-          className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={Paragraph}
-        >
-          {"I'm Vengeance".split("").map((char, index) => (
-            <motion.span key={index} variants={Letter}>
-              {char}
-            </motion.span>
-          ))}
-        </motion.p>
+        <Header />
+        <Profile />
       </main>
     </div>
   );
