@@ -20,7 +20,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462] relative overflow-hidden">
-        <Particles
+      <Particles
         className="absolute inset-0 z-10 animate-fade-in invert"
         quantity={100}
       />
@@ -107,17 +107,15 @@ export default function HomePage() {
           ))}
         </motion.p>
 
-<div className="relative  w-full">
- <div className="relative overflow-hidden whitespace-nowrap">
-      <motion.div
-        className="absolute inset-0 bg-white text-black py-2 px-4 rotate-[-2deg]"
-        animate={{ x: ['0%', '-100%'] }}
-        transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
-      >
-        {text.repeat(10)}
-      </motion.div>
-    </div>
-   </div>
+        <div className="relative w-full overflow-hidden">
+          <motion.div
+            className="absolute w-[200%] bg-white text-black py-2 px-4 rotate-[-2deg] flex items-center"
+            animate={{ x: ['0%', '-50%'] }}
+            transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
+          >
+            {text.repeat(10)}
+          </motion.div>
+        </div>
       </main>
     </div>
   );
