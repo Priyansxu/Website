@@ -52,7 +52,7 @@ export default function HomePage() {
               alt="Fluid"
               height={150}
               width={600}
-              className="relative opacity-70 z-200 w-full max-w-md"
+              className="relative opacity-70 z-20 w-full max-w-md"
             />
           </div>
         </section>
@@ -106,41 +106,41 @@ export default function HomePage() {
           ))}
         </motion.p>
 <section ref={secondSectionRef} className="flex my-4">
-          <motion.div
-            className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30 relative"
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            variants={Div}
-          >
-            <div className="flex-grow pr-6 text-xs md:text-2xl flex items-center justify-center text-left">
-              <motion.p
-                className="py-4 mx-4"
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-                variants={Paragraph}
-              >
-                {secondSectionText.split("").map((char, index) => (
-                  <motion.span key={index} variants={Letter}>
-                    {char}
-                  </motion.span>
-                ))}
-              </motion.p>
-            </div>
+  <motion.div
+    className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden relative"
+    initial="hidden"
+    animate={isInView ? "visible" : "hidden"}
+    variants={Div}
+  >
+    <div className="flex-grow pr-6 text-xs md:text-2xl flex items-center justify-center text-left z-30 backdrop-blur-md">
+      <motion.p
+        className="py-4 mx-4"
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={Paragraph}
+      >
+        {secondSectionText.split("").map((char, index) => (
+          <motion.span key={index} variants={Letter}>
+            {char}
+          </motion.span>
+        ))}
+      </motion.p>
+    </div>
 
-            <motion.div
-              className="flex-none w-1/3"
-              initial="hidden"
-              animate={isInView ? "visible" : "hidden"}
-              variants={Img}
-            >
-              <Image
-                src={Element}
-                alt="X"
-                className="h-full opacity-60 absolute inset-0 z-20"
-              />
-            </motion.div>
-          </motion.div>
-        </section>
+    <motion.div
+      className="flex-none w-1/3 z-30 backdrop-blur-md"
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={Img}
+    >
+      <Image
+        src={Element}
+        alt="X"
+        className="h-full opacity-60 absolute inset-0 z-10"
+      />
+    </motion.div>
+  </motion.div>
+</section>
       </main>
     </div>
   );
