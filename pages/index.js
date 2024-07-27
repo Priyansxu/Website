@@ -128,7 +128,7 @@ export default function HomePage() {
     </div>
 
     <motion.div
-      className="flex-none w-1/3 z-30 backdrop-blur-md absolute"
+      className="flex-none w-1/3 absolute"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={Img}
@@ -136,8 +136,8 @@ export default function HomePage() {
       <Image
         src={Element}
         alt="X"
-        height={50}
-        width={50}
+        height={100}
+        width={100}
         className="h-full opacity-60 relative inset-0 z-10"
       />
     </motion.div>
