@@ -7,7 +7,7 @@ import { Paragraph, Letter, Img, Div } from "../motions/animationVariants";
 const profileText =
   "Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.";
 
-const Profile = () => {
+export default function Profile() {
   const profileRef = useRef(null);
   const isInView = useInView(profileRef, { once: true });
 
@@ -60,6 +60,4 @@ const Profile = () => {
       </motion.p>
     </section>
   );
-};
-
-export default Profile;
+}
