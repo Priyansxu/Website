@@ -4,7 +4,7 @@ import Image from "next/image";
 import Fluid from "../public/fluid.png";
 import Helmet from "../public/helmet.png";
 import Particles from "../components/Particles";
-import Element from "../public/elementx.png";
+import Element from "../public/element.png";
 import { Paragraph, Heading, Letter, Img, Div } from "../motions/animationVariants";
 
 const paragraphText =
@@ -112,7 +112,7 @@ export default function HomePage() {
             animate={isInView ? "visible" : "hidden"}
             variants={Div}
           >
-            <div className="flex-grow text-xs md:text-2xl flex items-center justify-center text-left">
+            <div className="flex-grow text-xs md:text-2xl flex items-center justify-center text-left pl-6">
               <motion.p
                 className="py-4 mx-4"
                 initial="hidden"
@@ -134,8 +134,8 @@ export default function HomePage() {
             >
               <Image
                 src={Element}
-                alt="ElementX"
-                className="object-contain object-cover opacity-60 w-full h-full p-4 blur-sm"
+                alt="Element"
+                className="object-contain object-cover opacity-60 w-full h-full mx-4 blur-sm"
               />
             </motion.div>
           </motion.div>
