@@ -112,7 +112,7 @@ export default function HomePage() {
             animate={isInView ? "visible" : "hidden"}
             variants={Div}
           >
-            <div className="flex-grow pr-6 text-xs md:text-2xl flex items-center justify-center text-left">
+            <div className="flex-grow text-xs md:text-2xl flex items-center justify-center text-left">
               <motion.p
                 className="py-4 mx-4"
                 initial="hidden"
@@ -127,7 +127,7 @@ export default function HomePage() {
               </motion.p>
             </div>
             <motion.div
-              className="flex-none w-1/3 p-4"
+              className="flex-none w-1/3"
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
               variants={Img}
@@ -135,7 +135,7 @@ export default function HomePage() {
               <Image
                 src={Element}
                 alt="ElementX"
-                className="object-contain object-cover opacity-60 w-full h-full blur-sm"
+                className="object-contain object-cover opacity-60 w-full h-full p-4 blur-sm"
               />
             </motion.div>
           </motion.div>
