@@ -106,40 +106,40 @@ export default function HomePage() {
           ))}
         </motion.p>
 <section ref={secondSectionRef} className="flex my-4">
-  <motion.div
-    className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md absolute"
-    initial="hidden"
-    animate={isInView ? "visible" : "hidden"}
-    variants={Div}
-  >
-    <div className="flex-grow pr-6 text-xs md:text-2xl flex items-center justify-center text-left z-30">
-      <motion.p
-        className="py-4 mx-4"
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={Paragraph}
-      >
-        {secondSectionText.split("").map((char, index) => (
-          <motion.span key={index} variants={Letter}>
-            {char}
-          </motion.span>
-        ))}
-      </motion.p>
-    </div>
-
-    <motion.div
-      className="flex-1 w-1/3 relative"
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-    >
-      <Image
-        src={Element}
-        alt="ElementX"
-        className="object-contain object-cover h-full opacity-60 absolute inset-0 z-10"
-      />
-    </motion.div>
-  </motion.div>
-</section>
+          <motion.div
+            className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={Div}
+          >
+            <div className="flex-grow pr-6 text-xs md:text-2xl flex items-center justify-center text-left">
+              <motion.p
+                className="py-4 mx-4"
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                variants={Paragraph}
+              >
+                {secondSectionText.split("").map((char, index) => (
+                  <motion.span key={index} variants={Letter}>
+                    {char}
+                  </motion.span>
+                ))}
+              </motion.p>
+            </div>
+            <motion.div
+              className="flex-none w-1/3"
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+              variants={Img}
+            >
+              <Image
+                src={Element}
+                alt="ElementX"
+                className="object-contain object-cover opacity-60 blur-sm"
+              />
+            </motion.div>
+          </motion.div>
+        </section>
       </main>
     </div>
   );
