@@ -107,7 +107,7 @@ export default function HomePage() {
         </motion.p>
 <section ref={secondSectionRef} className="flex my-4">
   <motion.div
-    className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md"
+    className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md absolute"
     initial="hidden"
     animate={isInView ? "visible" : "hidden"}
     variants={Div}
@@ -128,14 +128,14 @@ export default function HomePage() {
     </div>
 
     <motion.div
-      className="flex-none w-1/3 absolute"
+      className="flex-1 w-1/3 relative"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >
       <Image
         src={Element}
         alt="ElementX"
-        className="object-contain object-cover h-full opacity-60 relative inset-0 z-10"
+        className="object-contain object-cover h-full opacity-60 absolute inset-0 z-10"
       />
     </motion.div>
   </motion.div>
