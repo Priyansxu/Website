@@ -136,7 +136,7 @@ export default function HomePage() {
               <Image
                 src={Element}
                 alt="X"
-                className="object-contain object-cover h-full w-full opacity-60 absolute inset-0 z-20"
+                className="h-full opacity-60 absolute inset-0 z-20"
               />
             </motion.div>
           </motion.div>
