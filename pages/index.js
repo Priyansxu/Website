@@ -78,7 +78,7 @@ export default function HomePage() {
             </motion.div>
             <div className="flex-grow pr-5 text-xs md:text-2xl flex items-center justify-center text-right">
               <motion.p
-                className="py-4 mx-4"
+                className="py-4 mx-2"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={Paragraph}
@@ -135,7 +135,7 @@ export default function HomePage() {
               <Image
                 src={Element}
                 alt="Element"
-                className="object-contain object-cover opacity-60 w-full h-full p-3 blur-sm md:blur-md"
+                className="object-contain object-cover opacity-60 w-full h-full blur-sm md:blur-md"
               />
             </motion.div>
           </motion.div>
