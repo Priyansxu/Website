@@ -106,11 +106,11 @@ export default function HomePage() {
             </motion.span>
           ))}
         </motion.p>
- <div className="overflow-hidden whitespace-nowrap">
+ <div className="relative overflow-hidden whitespace-nowrap w-full">
       <motion.div
-        className="bg-white text-black py-2 px-4"
+        className="absolute inset-0 bg-white text-black py-2 px-4 rotate-[-2deg]"
         animate={{ x: ['0%', '-100%'] }}
-        transition={{ repeat: Infinity, duration: 10, ease: 'linear' }}
+        transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}
       >
         {text.repeat(10)}
       </motion.div>
