@@ -128,14 +128,14 @@ export default function HomePage() {
     </div>
 
     <motion.div
-      className="flex-none absolute"
+      className="flex-none w-1/3 absolute"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >
       <Image
         src={Element}
         alt="ElementX"
-        className="h-full opacity-60 relative inset-0 z-10"
+        className="object-contain object-cover h-full opacity-60 relative inset-0 z-10"
       />
     </motion.div>
   </motion.div>
