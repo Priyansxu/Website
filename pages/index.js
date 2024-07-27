@@ -105,41 +105,6 @@ export default function HomePage() {
             </motion.span>
           ))}
         </motion.p>
-<section ref={secondSectionRef} className="flex my-4">
-          <motion.div
-            className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            variants={Div}
-          >
-            <div className="flex-grow text-xs md:text-2xl flex items-center justify-center text-left pl-5">
-              <motion.p
-                className="py-4 mx-2"
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-                variants={Paragraph}
-              >
-                {secondSectionText.split("").map((char, index) => (
-                  <motion.span key={index} variants={Letter}>
-                    {char}
-                  </motion.span>
-                ))}
-              </motion.p>
-            </div>
-            <motion.div
-              className="flex-none w-1/3"
-              initial="hidden"
-              animate={isInView ? "visible" : "hidden"}
-              variants={Img}
-            >
-              <Image
-                src={Element}
-                alt="Element"
-                className="object-contain object-cover opacity-60 w-full h-full blur-sm md:blur-md"
-              />
-            </motion.div>
-          </motion.div>
-        </section>
       </main>
     </div>
   );
