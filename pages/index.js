@@ -114,7 +114,7 @@ export default function HomePage() {
           >
             <div className="flex-grow text-xs md:text-2xl flex items-center justify-center text-left pl-5">
               <motion.p
-                className="py-4 mx-4"
+                className="py-4 mx-2"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={Paragraph}
