@@ -135,7 +135,7 @@ export default function HomePage() {
               <Image
                 src={Element}
                 alt="ElementX"
-                className="object-contain object-cover opacity-60 w-full blur-sm p-2"
+                className="object-contain object-cover opacity-60 w-full h-full blur-sm p-2"
               />
             </motion.div>
           </motion.div>
