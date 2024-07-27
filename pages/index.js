@@ -135,9 +135,7 @@ export default function HomePage() {
     >
       <Image
         src={Element}
-        alt="X"
-        height={100}
-        width={100}
+        alt="ElementX"
         className="h-full opacity-60 relative inset-0 z-10"
       />
     </motion.div>
