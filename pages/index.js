@@ -106,7 +106,8 @@ export default function HomePage() {
             </motion.span>
           ))}
         </motion.p>
-</div className="relative  w-full"
+
+<div className="relative  w-full">
  <div className="relative overflow-hidden whitespace-nowrap">
       <motion.div
         className="absolute inset-0 bg-white text-black py-2 px-4 rotate-[-2deg]"
