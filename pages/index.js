@@ -12,8 +12,7 @@ const paragraphText =
 const secondSectionText =
   "Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.";
 
-const MovingStrip = () => {
-  const text = "FRONTEND • BACKEND • FRONTEND • BACKEND • ";
+const text = "FRONTEND • BACKEND • FRONTEND • BACKEND • ";
 
 export default function HomePage() {
   const secondSectionRef = useRef(null);
