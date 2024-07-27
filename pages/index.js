@@ -12,8 +12,6 @@ const paragraphText =
 const secondSectionText =
   "Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.";
 
-const text = "FRONTEND • BACKEND • FRONTEND • BACKEND • ";
-
 export default function HomePage() {
   const secondSectionRef = useRef(null);
   const isInView = useInView(secondSectionRef, { once: true });
@@ -106,16 +104,6 @@ export default function HomePage() {
             </motion.span>
           ))}
         </motion.p>
-
-        <div className="relative w-full overflow-hidden">
-          <motion.div
-            className="absolute w-[200%] bg-white text-black py-2 px-4 rotate-[-2deg] flex items-center"
-            animate={{ x: ['0%', '-50%'] }}
-            transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
-          >
-            {text.repeat(10)}
-          </motion.div>
-        </div>
       </main>
     </div>
   );
