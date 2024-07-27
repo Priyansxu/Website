@@ -107,12 +107,12 @@ export default function HomePage() {
         </motion.p>
 <section ref={secondSectionRef} className="flex my-4">
   <motion.div
-    className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden relative"
+    className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md"
     initial="hidden"
     animate={isInView ? "visible" : "hidden"}
     variants={Div}
   >
-    <div className="flex-grow pr-6 text-xs md:text-2xl flex items-center justify-center text-left z-30 backdrop-blur-md">
+    <div className="flex-grow pr-6 text-xs md:text-2xl flex items-center justify-center text-left z-30">
       <motion.p
         className="py-4 mx-4"
         initial="hidden"
