@@ -127,7 +127,7 @@ export default function HomePage() {
               </motion.p>
             </div>
             <motion.div
-              className="flex-none w-1/3"
+              className="flex-none w-1/3 p-4"
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
               variants={Img}
@@ -135,7 +135,7 @@ export default function HomePage() {
               <Image
                 src={Element}
                 alt="ElementX"
-                className="object-contain object-cover opacity-60 w-full h-full blur-sm p-2"
+                className="object-contain object-cover opacity-60 w-full h-full blur-sm"
               />
             </motion.div>
           </motion.div>
