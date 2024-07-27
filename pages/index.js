@@ -116,6 +116,7 @@ export default function HomePage() {
         {text.repeat(10)}
       </motion.div>
     </div>
+   </div>
       </main>
     </div>
   );
