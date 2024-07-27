@@ -128,10 +128,9 @@ export default function HomePage() {
     </div>
 
     <motion.div
-      className="flex-none w-1/3 absolute"
+      className="flex-none absolute"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      variants={Img}
     >
       <Image
         src={Element}
