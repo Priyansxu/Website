@@ -13,7 +13,7 @@ export default function Document() {
 
         <meta property="og:title" content="Priyanshu" />
         <meta property="og:description" content="Ordinary guy from parallel world." />
-        <meta property="og:image" content="https://pusxoo.vercel.app/helmet.png" />
+  
         <meta property="og:url" content="https://pusxoo.vercel.app" />
         <meta property="og:site_name" content="Priyanshu" />
 
