@@ -16,10 +16,13 @@ export default function Profile() {
   const isInView = useInView(profileRef, { once: true });
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [key, setKey] = useState(0);
+  const [isRepeating, setIsRepeating] = useState(false);
 
   const handleNext = () => {
-    setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    setKey((prevKey) => prevKey + 1); // To reset the animation
+    const newIndex = (currentTextIndex + 1) % texts.length;
+    setCurrentTextIndex(newIndex);
+    setIsRepeating(newIndex === 0);
+    setKey((prevKey) => prevKey + 1);
   };
 
   return (
@@ -44,24 +47,24 @@ export default function Profile() {
         </motion.div>
         <div className="flex-grow pr-5 text-xs md:text-2xl flex items-center justify-center text-right">
           <motion.p
-            key={key} // This ensures the animation restarts
+            key={key}
             className="py-4 mx-2"
             initial="hidden"
             animate="visible"
-            variants={currentTextIndex === 0 ? {} : Paragraph}
+            variants={(currentTextIndex === 0 && !isRepeating) ? {} : Paragraph}
           >
             {texts[currentTextIndex].split("").map((char, index) => (
-              <motion.span key={index} variants={currentTextIndex === 0 ? {} : Letter}>
+              <motion.span key={index} variants={(currentTextIndex === 0 && !isRepeating) ? {} : Letter}>
                 {char}
               </motion.span>
             ))}
           </motion.p>
         </div>
         <div
-          className="absolute bottom-4 right-4 text-white bg-blue-600 rounded-full p-2 cursor-pointer backdrop-blur-md opacity-80"
+          className="absolute bottom-3 right-3 bg-[#a5a5a5] rounded-full p-2 cursor-pointer opacity-60"
           onClick={handleNext}
         >
-          <FaChevronRight className="text-2xl" />
+        <FaChevronRight className="text-lg" />
         </div>
       </motion.div>
 
@@ -77,6 +80,7 @@ export default function Profile() {
           </motion.span>
         ))}
       </motion.p>
+
     </section>
   );
 }
