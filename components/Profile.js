@@ -19,11 +19,11 @@ export default function Profile() {
 
   const handleNext = () => {
     setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    setKey((prevKey) => prevKey + 1);
+    setKey((prevKey) => prevKey + 1); // To reset the animation
   };
 
   return (
-    <section ref={profileRef} className="flex flex-col my-10">
+    <section ref={profileRef} className="flex flex-col my-4">
       <motion.div
         className="relative mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
@@ -44,24 +44,24 @@ export default function Profile() {
         </motion.div>
         <div className="flex-grow pr-5 text-xs md:text-2xl flex items-center justify-center text-right">
           <motion.p
-            key={key}
+            key={key} // This ensures the animation restarts
             className="py-4 mx-2"
             initial="hidden"
             animate="visible"
-            variants={Paragraph}
+            variants={currentTextIndex === 0 ? {} : Paragraph}
           >
             {texts[currentTextIndex].split("").map((char, index) => (
-              <motion.span key={index} variants={Letter}>
+              <motion.span key={index} variants={currentTextIndex === 0 ? {} : Letter}>
                 {char}
               </motion.span>
             ))}
           </motion.p>
         </div>
         <div
-          className="absolute bottom-3 right-3 bg-[#a5a5a5] rounded-full p-2 cursor-pointer backdrop-blur-md opacity-50"
+          className="absolute bottom-4 right-4 text-white bg-blue-600 rounded-full p-2 cursor-pointer backdrop-blur-md opacity-80"
           onClick={handleNext}
         >
-        <FaChevronRight className="text-lg" />
+          <FaChevronRight className="text-2xl" />
         </div>
       </motion.div>
 
