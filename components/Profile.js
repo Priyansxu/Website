@@ -57,13 +57,13 @@ export default function Profile() {
             ))}
           </motion.p>
         </div>
-        <div
-          className="absolute bottom-4 right-4  bg-[#a5a5a5] rounded-full p-2 cursor-pointer"
+      </motion.div>
+
+ <div className="absolute bottom-4 right-4 m-2 bg-[#a5a5a5] rounded-full p-2 cursor-pointer"
           onClick={handleNext}
         >
-          <FaChevronRight className="text-2xl" />
+          <FaChevronRight className="text-lg" />
         </div>
-      </motion.div>
 
       <motion.p
         className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
