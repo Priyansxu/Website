@@ -23,7 +23,7 @@ export default function Profile() {
   };
 
   return (
-    <section ref={profileRef} className="flex flex-col my-10">
+    <section ref={profileRef} className="flex flex-col my-4 mt-10">
       <motion.div
         className="relative mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
