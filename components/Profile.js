@@ -56,12 +56,14 @@ export default function Profile() {
               </motion.span>
             ))}
           </motion.p>
-        </div>
-<div className="absolute bottom-4 right-4 my-6 bg-[#a5a5a5] rounded-full p-2 cursor-pointer"
-          onClick={handleNext}
-        >
+        <motion.div className="absolute bottom-4 right-4 bg-[#a5a5a5] rounded-full p-2 cursor-pointer mt-2"
+         initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={Div}
+        onClick={handleNext}
+      >
           <FaChevronRight className="text-lg" />
-        </div>
+        </motion.div>
       </motion.div>
 
 
