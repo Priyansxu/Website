@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
@@ -15,9 +15,11 @@ export default function Profile() {
   const profileRef = useRef(null);
   const isInView = useInView(profileRef, { once: true });
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [key, setKey] = useState(0);
 
   const handleNext = () => {
     setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    setKey((prevKey) => prevKey + 1); // To reset the animation
   };
 
   return (
@@ -43,9 +45,10 @@ export default function Profile() {
         </motion.div>
         <div className="flex-grow pr-5 text-xs md:text-2xl flex items-center justify-center text-right">
           <motion.p
+            key={key} // This ensures the animation restarts
             className="py-4 mx-2"
             initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
+            animate="visible"
             variants={Paragraph}
           >
             {texts[currentTextIndex].split("").map((char, index) => (
