@@ -19,13 +19,13 @@ export default function Profile() {
 
   const handleNext = () => {
     setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    setKey((prevKey) => prevKey + 1); // To reset the animation
+    setKey((prevKey) => prevKey + 1);
   };
 
   return (
     <section ref={profileRef} className="flex flex-col my-4">
       <motion.div
-        className="relative mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
+        className="relative mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[#a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={Div}
@@ -44,7 +44,7 @@ export default function Profile() {
         </motion.div>
         <div className="flex-grow pr-5 text-xs md:text-2xl flex items-center justify-center text-right">
           <motion.p
-            key={key} // This ensures the animation restarts
+            key={key}
             className="py-4 mx-2"
             initial="hidden"
             animate="visible"
@@ -56,16 +56,17 @@ export default function Profile() {
               </motion.span>
             ))}
           </motion.p>
-        <motion.div className="absolute bottom-4 right-4 bg-[#a5a5a5] rounded-full p-2 cursor-pointer mt-2"
-         initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={Div}
-        onClick={handleNext}
-      >
-          <FaChevronRight className="text-lg" />
+          <motion.div
+            className="absolute bottom-4 right-4 bg-[#a5a5a5] rounded-full p-2 cursor-pointer mt-2"
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={Div}
+            onClick={handleNext}
+          >
+            <FaChevronRight className="text-lg" />
+          </motion.div>
         </motion.div>
       </motion.div>
-
 
       <motion.p
         className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
