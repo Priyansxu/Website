@@ -11,3 +11,8 @@
   font-family: 'CeltG';
   src: url('/fonts/CELTG___.TTF') format('truetype');
 }
+
+@font-face {
+  font-family: 'MonoSans';
+  src: url('/fonts/Mona-Sans-BoldWide.otf') format('truetype');
+}
