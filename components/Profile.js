@@ -58,7 +58,7 @@ export default function Profile() {
           </motion.p>
         </div>
         <div
-          className="absolute bottom-4 right-4 bg-[#a5a5a5]rounded-full p-1 cursor-pointer backdrop-blur-md opacity-70"
+          className="absolute bottom-5 right-5 bg-[#a5a5a5]rounded-full p-2 cursor-pointer backdrop-blur-md opacity-70"
           onClick={handleNext}
         >
         <FaChevronRight className="text-lg" />
