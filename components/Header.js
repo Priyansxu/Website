@@ -8,7 +8,7 @@ const paragraphText =
 
 export default function Header() {
   return (
-    <section className="p-8 mb-5 text-center">
+    <section className="p-8 text-center">
       <motion.h1
         className="text-4xl font-bold text-black bg-clip-text pb-3"
         initial={{ opacity: 0, y: -20 }}
