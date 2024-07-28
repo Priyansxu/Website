@@ -1,25 +1,23 @@
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 import Helmet from "../public/helmet.png";
 import { Paragraph, Letter, Img, Div } from "../motions/animationVariants";
 
-const profileText =
-  "Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.";
-
-const additionalText1 =
-  "This is the first additional paragraph. It contains more information about my interests and hobbies.";
-const additionalText2 =
-  "This is the second additional paragraph. Here you can learn more about my future goals and aspirations.";
+const texts = [
+  "Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.",
+  "This is the first additional paragraph. It contains more information about my interests and hobbies.",
+  "This is the second additional paragraph. Here you can learn more about my future goals and aspirations."
+];
 
 export default function Profile() {
   const profileRef = useRef(null);
   const isInView = useInView(profileRef, { once: true });
-  const [showMore, setShowMore] = useState(false);
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
-  const handleClick = () => {
-    setShowMore(!showMore);
+  const handleNext = () => {
+    setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
   };
 
   return (
@@ -29,7 +27,7 @@ export default function Profile() {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={Div}
-        onClick={handleClick}
+        onClick={handleNext}
       >
         <motion.div
           className="flex-none w-1/3"
@@ -50,57 +48,15 @@ export default function Profile() {
             animate={isInView ? "visible" : "hidden"}
             variants={Paragraph}
           >
-            {profileText.split("").map((char, index) => (
+            {texts[currentTextIndex].split("").map((char, index) => (
               <motion.span key={index} variants={Letter}>
                 {char}
               </motion.span>
             ))}
           </motion.p>
         </div>
+        <FaChevronRight className="text-2xl cursor-pointer" onClick={handleNext} />
       </motion.div>
-
-      <div className="flex justify-center items-center mt-4">
-        {showMore ? (
-          <FaChevronUp
-            className="text-2xl cursor-pointer"
-            onClick={handleClick}
-          />
-        ) : (
-          <FaChevronDown
-            className="text-2xl cursor-pointer"
-            onClick={handleClick}
-          />
-        )}
-      </div>
-
-      {showMore && (
-        <div className="flex flex-col">
-          <motion.p
-            className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-xl md:text-2xl"
-            initial="hidden"
-            animate="visible"
-            variants={Paragraph}
-          >
-            {additionalText1.split("").map((char, index) => (
-              <motion.span key={index} variants={Letter}>
-                {char}
-              </motion.span>
-            ))}
-          </motion.p>
-          <motion.p
-            className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-xl md:text-2xl"
-            initial="hidden"
-            animate="visible"
-            variants={Paragraph}
-          >
-            {additionalText2.split("").map((char, index) => (
-              <motion.span key={index} variants={Letter}>
-                {char}
-              </motion.span>
-            ))}
-          </motion.p>
-        </div>
-      )}
 
       <motion.p
         className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
