@@ -1,23 +1,35 @@
+import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 import Image from "next/image";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Helmet from "../public/helmet.png";
 import { Paragraph, Letter, Img, Div } from "../motions/animationVariants";
 
 const profileText =
   "Priyanshu Gupta, born in 2007. A passionate explorer of programming, graphic design, psychology, and space. Always pushing the boundaries of creativity.";
 
+const additionalText1 =
+  "This is the first additional paragraph. It contains more information about my interests and hobbies.";
+const additionalText2 =
+  "This is the second additional paragraph. Here you can learn more about my future goals and aspirations.";
+
 export default function Profile() {
   const profileRef = useRef(null);
   const isInView = useInView(profileRef, { once: true });
+  const [showMore, setShowMore] = useState(false);
+
+  const handleClick = () => {
+    setShowMore(!showMore);
+  };
 
   return (
     <section ref={profileRef} className="flex flex-col my-4">
       <motion.div
-        className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
+        className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30 cursor-pointer"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={Div}
+        onClick={handleClick}
       >
         <motion.div
           className="flex-none w-1/3"
@@ -46,6 +58,50 @@ export default function Profile() {
           </motion.p>
         </div>
       </motion.div>
+
+      <div className="flex justify-center items-center mt-4">
+        {showMore ? (
+          <FaChevronUp
+            className="text-2xl cursor-pointer"
+            onClick={handleClick}
+          />
+        ) : (
+          <FaChevronDown
+            className="text-2xl cursor-pointer"
+            onClick={handleClick}
+          />
+        )}
+      </div>
+
+      {showMore && (
+        <div className="flex flex-col">
+          <motion.p
+            className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-xl md:text-2xl"
+            initial="hidden"
+            animate="visible"
+            variants={Paragraph}
+          >
+            {additionalText1.split("").map((char, index) => (
+              <motion.span key={index} variants={Letter}>
+                {char}
+              </motion.span>
+            ))}
+          </motion.p>
+          <motion.p
+            className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-xl md:text-2xl"
+            initial="hidden"
+            animate="visible"
+            variants={Paragraph}
+          >
+            {additionalText2.split("").map((char, index) => (
+              <motion.span key={index} variants={Letter}>
+                {char}
+              </motion.span>
+            ))}
+          </motion.p>
+        </div>
+      )}
+
       <motion.p
         className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
         initial="hidden"
