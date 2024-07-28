@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
@@ -25,11 +25,10 @@ export default function Profile() {
   return (
     <section ref={profileRef} className="flex flex-col my-4">
       <motion.div
-        className="mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30 cursor-pointer"
+        className="relative mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={Div}
-        onClick={handleNext}
       >
         <motion.div
           className="flex-none w-1/3"
@@ -58,7 +57,12 @@ export default function Profile() {
             ))}
           </motion.p>
         </div>
-        <FaChevronRight className="text-2xl cursor-pointer" onClick={handleNext} />
+        <div
+          className="absolute bottom-4 right-4  bg-[#a5a5a5] rounded-full p-2 cursor-pointer"
+          onClick={handleNext}
+        >
+          <FaChevronRight className="text-2xl" />
+        </div>
       </motion.div>
 
       <motion.p
