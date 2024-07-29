@@ -8,7 +8,7 @@ module.exports = {
       fontFamily: {
         spaceMono: ['SpaceMono', 'monospace'],
         celtG: ['CeltG', 'sans-serif'],
-        monaSansB: ['MonaSansB', 'sans-serif'],
+        monaSans: ['MonaSans', 'sans-serif'],
         monaSansM: ['MonaSansM', 'sans-serif'],
       },
     },
