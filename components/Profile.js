@@ -67,7 +67,7 @@ export default function Profile() {
         <FaChevronRight className="text-lg" />
         </div>
       </motion.div>
-
+{/*
       <motion.p
         className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
         initial="hidden"
@@ -80,7 +80,7 @@ export default function Profile() {
           </motion.span>
         ))}
       </motion.p>
-
+*/}
     </section>
   );
 }
