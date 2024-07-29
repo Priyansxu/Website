@@ -10,6 +10,7 @@ export default function HomePage() {
       <main className="pt-20 relative">
         <Header />
         <Profile />
+        <Skills />
       </main>
     </div>
   );
