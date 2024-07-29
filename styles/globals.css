@@ -13,6 +13,12 @@
 }
 
 @font-face {
-  font-family: 'MonaSans';
+  font-family: 'MonaSansB';
   src: url('/fonts/Mona-Sans-BoldWide.otf') format('truetype');
 }
+
+@font-face {
+  font-family: 'MonaSansM';
+  src: url('/fonts/Mona-Sans-MediumWide.otf') format('truetype');
+}
+
