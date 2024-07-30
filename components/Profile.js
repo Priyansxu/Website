@@ -26,9 +26,9 @@ export default function Profile() {
   };
 
   return (
-    <section ref={profileRef} className="flex flex-col my-4">
+    <section ref={profileRef} className="flex flex-col my-4 mx-4 lg:mx-8">
       <motion.div
-        className="relative mx-4 lg:mx-8 w-full rounded-md flex bg-gradient-to-b from-[#a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
+        className="relative w-full rounded-md flex bg-gradient-to-b from-[#a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={Div}
@@ -45,7 +45,7 @@ export default function Profile() {
             className="object-contain object-cover h-full w-full opacity-60"
           />
         </motion.div>
-        <div className="flex-grow p-2 text-xs md:text-2xl flex items-center justify-center text-right">
+        <div className="flex-grow pr-5 text-xs md:text-2xl flex items-center justify-center text-right">
           <motion.p
             key={key}
             className="py-4 mx-2"
