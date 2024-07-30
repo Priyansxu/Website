@@ -5,7 +5,7 @@ import Skills from "../components/Skills";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen font-mono bg-gradient-to-br from-[#1B1B1D] to-[#101010] text-white relative overflow-hidden">
+    <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462]  relative overflow-hidden">
       <Particles quantity={100} />
       <main className="pt-20 relative">
         <Header />
