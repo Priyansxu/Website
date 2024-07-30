@@ -28,7 +28,7 @@ export default function Profile() {
   return (
     <section ref={profileRef} className="flex flex-col my-4">
       <motion.div
-        className="relative mx-4 md:mx-0 w-150 rounded-md md:rounded-none md:w-full h-85 md:h-90 flex bg-gradient-to-b from-[a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
+        className="relative mx-4 w-full rounded-md flex bg-gradient-to-b from-[#a5a5a5] via-neutral-300 to-[#cdcdcd] shadow-xl overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={Div}
@@ -64,23 +64,9 @@ export default function Profile() {
           className="absolute bottom-3 right-3 bg-[#a5a5a5] rounded-full p-2 cursor-pointer opacity-60"
           onClick={handleNext}
         >
-        <FaChevronRight className="text-lg" />
+          <FaChevronRight className="text-lg" />
         </div>
       </motion.div>
-{/*
-      <motion.p
-        className="p-6 mx-6 md:mx-8 my-7 md:my-10 font-celtG text-5xl md:text-7xl"
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={Paragraph}
-      >
-        {"I'm Vengeance".split("").map((char, index) => (
-          <motion.span key={index} variants={Letter}>
-            {char}
-          </motion.span>
-        ))}
-      </motion.p>
-*/}
     </section>
   );
 }
