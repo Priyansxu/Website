@@ -45,7 +45,7 @@ export default function Profile() {
             className="object-contain object-cover h-full w-full opacity-60"
           />
         </motion.div>
-        <div className="flex-grow pr-5 text-xs md:text-2xl flex items-center justify-center text-right">
+        <div className="flex-grow p-2 text-xs md:text-2xl flex items-center justify-center text-right">
           <motion.p
             key={key}
             className="py-4 mx-2"
