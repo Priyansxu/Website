@@ -17,11 +17,11 @@ export default function Skills() {
       </h5>
       <div className="mt-6">
         <h2 className="text-xl text-black font-monaSansM">Languages</h2>
-        <div className="flex flex-wrap mt-2 bg-gradient-to-b from-gray-800 to-gray-900 p-4 rounded-lg">
+        <div className="flex flex-wrap mt-2">
           {languages.map((language, index) => (
             <div
               key={index}
-              className="flex items-center rounded-md border border-gray-600 p-2 m-1 text-center text-sm text-white"
+              className="flex items-center rounded-md border border-gray-600 bg-gradient-to-b from-gray-800 to-gray-900 p-2 m-1 text-center text-sm text-white"
             >
               <div className={`w-3 h-3 rounded-full mr-2 ${circleColors[language]}`}></div>
               {language}
@@ -29,11 +29,11 @@ export default function Skills() {
           ))}
         </div>
         <h2 className="text-xl text-black font-monaSansM mt-4">Frameworks</h2>
-        <div className="flex flex-wrap mt-2 bg-gradient-to-b from-gray-800 to-gray-900 p-4 rounded-lg">
+        <div className="flex flex-wrap mt-2">
           {frameworks.map((framework, index) => (
             <div
               key={index}
-              className="flex items-center rounded-md border border-gray-600 p-2 m-1 text-center text-sm text-white"
+              className="flex items-center rounded-md border border-gray-600 bg-gradient-to-b from-gray-800 to-gray-900 p-2 m-1 text-center text-sm text-white"
             >
               <div className={`w-3 h-3 rounded-full mr-2 ${circleColors[framework]}`}></div>
               {framework}
