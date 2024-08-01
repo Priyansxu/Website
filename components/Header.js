@@ -39,7 +39,7 @@ export default function Header() {
           className="relative opacity-70 z-20 w-full max-w-md"
         />
       </div>
-    <div className="p-10 md:p-4">
+    <div className="mx-10 my-4 bg-gray-800 rounded-md border border-gray-700 p-8">
     </div>
     </section>
   );
