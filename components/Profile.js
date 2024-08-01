@@ -28,7 +28,7 @@ export default function Profile() {
   return (
     <section ref={profileRef} className="flex flex-col my-4 mx-4 lg:mx-8">
       <motion.div
-        className="relative w-full rounded-md flex bg-gradient-to-br from-gray-600 via-gray-700 to-gray-900 shadow-xl text-white overflow-hidden backdrop-blur-md z-30"
+        className="relative w-full rounded-md flex bg-gradient-to-br from-gray-400 via-gray-500 to-gray-600 shadow-xl text-white overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={Div}
