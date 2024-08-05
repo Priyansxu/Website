@@ -18,7 +18,7 @@ export default function Header() {
         Priyanshu
       </motion.h1>
       <motion.p
-        className="mt-4 text-lg font-spaceMono text-gray-600 backdrop-blur-md z-30"
+        className="mt-4 text-lg font-spaceMono text-gray-600 backdrop-blur-md"
         initial="hidden"
         animate="visible"
         variants={Paragraph}
@@ -30,17 +30,15 @@ export default function Header() {
         ))}
       </motion.p>
       <div className="flex justify-center items-center relative mt-6">
-        <div className="absolute inset-0 backdrop-blur-md p-6 z-30"></div>
+        <div className="absolute inset-0 backdrop-blur-md p-6 z-10"></div>
         <Image
           src={Fluid}
           alt="Fluid"
           height={150}
           width={600}
-          className="relative opacity-70 z-20 w-full max-w-md"
+          className="relative opacity-70 w-full max-w-md"
         />
       </div>
-    <div className="mx-4 my-5 bg-gray-800 rounded-md border border-gray-400 p-6">
-    </div>
     </section>
   );
 }
