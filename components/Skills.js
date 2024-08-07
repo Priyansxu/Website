@@ -10,12 +10,12 @@ export default function Skills() {
   };
 
   return (
-    <div className="pt-10 m-4">
+    <div className="pt-10 m-4 bg-[#a5a5a5]/60 rounded-lg">
       <h1 className="text-4xl text-black font-monaSans">Skills</h1>
       <h5 className="text-sm text-left font-monaSansM mt-4">
         Here are some languages and frameworks I've learnt in a year.
       </h5>
-      <div className="mt-6">
+      <div className="mt-6 bg-[#dcdcdc] bg-[#1111]/50 rounded-lg">
         <h2 className="text-xl text-gray-700 font-monaSansM">Languages</h2>
         <div className="flex flex-wrap mt-2">
           {languages.map((language, index) => (
