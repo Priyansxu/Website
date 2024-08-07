@@ -1,14 +1,14 @@
 import React from 'react';
 import { FaPython, FaJs, FaReact } from 'react-icons/fa';
-import { SiTailwindcss, SiNextjs } from 'react-icons/si';
+import { RiTailwindCssFill, RiNextjsFill } from 'react-icons/ri';
 
 export default function Skills() {
 
 const icons = [
   { name: 'Python', icon: <FaPython className="text-6xl" /> },
   { name: 'JavaScript', icon: <FaJs className="text-6xl" /> },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-6xl" /> },
-  { name: 'Next.js', icon: <SiNextdotjs className="text-6xl" /> },
+  { name: 'Tailwind CSS', icon: <RiTailwindCssFill className="text-6xl" /> },
+  { name: 'Next.js', icon: <RiNextjsFill className="text-6xl" /> },
   { name: 'React', icon: <FaReact className="text-6xl" /> },
 ];
 
