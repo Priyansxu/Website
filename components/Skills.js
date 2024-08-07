@@ -21,7 +21,7 @@ export default function Skills() {
           {languages.map((language, index) => (
             <div
               key={index}
-              className="flex items-center rounded-md border border-gray-500 bg-gradient-to-b from-gray-700 to-gray-800 p-2 m-2 text-center text-sm text-white"
+              className="flex items-center rounded-md border border-gray-500 bg-gradient-to-b from-gray-700 to-gray-800 p-2 m-1 ml-1 text-center text-sm text-white"
             >
               <div className={`w-3 h-3 rounded-full mr-2 ${circleColors[language]}`}></div>
               {language}
@@ -33,7 +33,7 @@ export default function Skills() {
           {frameworks.map((framework, index) => (
             <div
               key={index}
-              className="flex items-center rounded-md border border-gray-500 bg-gradient-to-b from-gray-700 to-gray-800 p-2 m-2 text-center text-sm text-white"
+              className="flex items-center rounded-md border border-gray-500 bg-gradient-to-b from-gray-700 to-gray-800 p-2 m-1 ml-1 text-center text-sm text-white"
             >
               <div className={`w-3 h-3 rounded-full mr-2 ${circleColors[framework]}`}></div>
               {framework}
