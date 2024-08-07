@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPython, FaJs, FaReact } from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import { SiTailwindcss, SiNextjs } from 'react-icons/si';
 
 export default function Skills() {
 
