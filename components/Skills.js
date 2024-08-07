@@ -18,8 +18,8 @@ const icons = [
       <h5 className="text-sm text-left font-monaSansM m-4">
         Here are some languages and frameworks I've learnt in a year.
       </h5>
-      <div className=" m-3 rounded-md">
-        <div className="relative overflow-hidden bg-gray-200 py-4">
+      <div className=" m-3">
+        <div className="relative overflow-hidden bg-gray-400 rounded-md py-4">
           <div className="flex animate-scroll">
             {icons.map((icon, index) => (
               <div key={index} className="flex-none mx-4">
