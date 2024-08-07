@@ -15,7 +15,7 @@ export default function Skills() {
       <h5 className="text-sm text-left font-monaSansM m-4">
         Here are some languages and frameworks I've learnt in a year.
       </h5>
-      <div className="py-3 m-4 bg-[#dcdcdc] bg-[#71747B]/50 rounded-lg">
+      <div className="py-3 m-4 bg-[#71747B]/90 rounded-lg">
         <h2 className="text-xl text-gray-700 font-monaSansM m-4">Languages</h2>
         <div className="flex flex-wrap mt-2">
           {languages.map((language, index) => (
