@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Fluid from "../public/fluid.png";
-import { Paragraph, Heading } from "../motions/animationVariants";
+import { FadeInStagger, BlurFadeIn } from "../motions/effects";
 
 const paragraphText =
   "Welcome to the futuristic profile of Priyanshu. Here, you will find information about my projects, skills, and contact details.";
@@ -21,10 +21,10 @@ export default function Header() {
         className="mt-4 text-lg font-spaceMono text-gray-600 backdrop-blur-md"
         initial="hidden"
         animate="visible"
-        variants={Paragraph}
+        variants={FadeInStagger}
       >
         {paragraphText.split("").map((char, index) => (
-          <motion.span key={index} variants={Heading}>
+          <motion.span key={index} variants={BlurFadeIn}>
             {char}
           </motion.span>
         ))}
