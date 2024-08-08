@@ -31,7 +31,7 @@ export default function Profile() {
       <h1 className="text-4xl text-black font-monaSans mt-2">About me</h1>
   </div>
       <motion.div
-        className="relative w-full rounded-md flex bg-gradient-to-br from-[#b6b6b6] via-[#71747B]/50 to-[#b6b6b6] opacity-30 shadow-xl overflow-hidden backdrop-blur-md z-30"
+        className="relative w-full rounded-md flex bg-gradient-to-br from-[#b6b6b6] via-[#71747B]/40 to-[#b6b6b6] opacity-30 shadow-xl overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={Div}
@@ -45,7 +45,7 @@ export default function Profile() {
           <Image
             src={Helmet}
             alt="Helmet"
-            className="object-contain object-cover h-full w-full opacity-60"
+            className="object-contain object-cover h-full w-full opacity-70"
           />
         </motion.div>
         <div className="flex-grow pr-4 text-xs md:text-2xl font-monaSansM flex items-center justify-center text-right">
