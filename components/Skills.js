@@ -40,7 +40,6 @@ export default function Skills() {
                 {icon.icon}
               </div>
             ))}
-          </div>
             {icons.map((icon, index) => (
               <div key={index + icons.length} className="flex-none mx-4">
                 {icon.icon}
