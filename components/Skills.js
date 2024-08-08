@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { motion } from 'framer-motion';
 import { FaPython, FaJs, FaReact } from 'react-icons/fa';
 import { RiTailwindCssFill, RiNextjsFill } from 'react-icons/ri';
