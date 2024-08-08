@@ -19,7 +19,7 @@ export default function Skills() {
   return (
     <div ref={skillsRef} className="py-3 my-8 lg:my-10 m-4 bg-[#a5a5a5]/60 rounded-md shadow-xl">
       <h1 className="text-4xl text-black font-monaSans m-4">Skills</h1>
-      <h5 className="text-sm text-left font-monaSansM m-4">
+      <h5 className="text-sm md:text-xl lg:text-2xl text-left font-monaSansM m-4">
         Here are some languages and frameworks I've learnt in a year.
       </h5>
       <div className="m-3">
