@@ -1,6 +1,9 @@
 import React from 'react';
+
+import { motion } from 'framer-motion';
 import { FaPython, FaJs, FaReact } from 'react-icons/fa';
 import { RiTailwindCssFill, RiNextjsFill } from 'react-icons/ri';
+import { FadeInStagger, PopIn } from '../motions/effects';
 
 export default function Skills() {
   const icons = [
@@ -18,20 +21,25 @@ export default function Skills() {
         Here are some languages and frameworks I've learnt in a year.
       </h5>
       <div className="m-3">
-        <div className="relative overflow-hidden bg-[#b6b6b6] rounded-md py-4">
+        <motion.div
+          className="relative overflow-hidden bg-[#b6b6b6] rounded-md py-4"
+          initial="hidden"
+          animate="visible"
+          variants={FadeInStagger}
+        >
           <div className="flex w-[200%] animate-scroll">
             {icons.map((icon, index) => (
-              <div key={index} className="flex-none mx-4">
+              <motion.div key={index} className="flex-none mx-4" variants={PopIn}>
                 {icon.icon}
-              </div>
+              </motion.div>
             ))}
             {icons.map((icon, index) => (
-              <div key={index} className="flex-none mx-4">
+              <motion.div key={index + icons.length} className="flex-none mx-4" variants={PopIn}>
                 {icon.icon}
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
