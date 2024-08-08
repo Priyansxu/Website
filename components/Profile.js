@@ -27,8 +27,8 @@ export default function Profile() {
 
   return (
     <section ref={profileRef} className="flex flex-col m-4 lg:mx-8">
-    <div className="p-3 my-1 bg-[#a5a5a5]/60 rounded-md">
-      <h1 className="text-4xl text-black font-monaSans mt-4 mx-4">About me</h1>
+    <div className="p-4 my-1 bg-[#a5a5a5]/60 rounded-md">
+      <h1 className="text-4xl text-black font-monaSans mt-3">About me</h1>
   </div>
       <motion.div
         className="relative w-full rounded-md flex bg-gradient-to-br from-[#b6b6b6] via-[#71747B]/50 to-[#b6b6b6] opacity-30 shadow-xl overflow-hidden backdrop-blur-md z-30"
