@@ -29,7 +29,7 @@ export default function Profile() {
     <section ref={profileRef} className="flex flex-col m-4 lg:mx-8">
       <h1 className="text-4xl text-black font-monaSans mb-4">About me</h1>
       <motion.div
-        className="relative w-full rounded-md flex bg-gradient-to-br from-[#b6b6b6] via-[#71747B] to-[#b6b6b6] opacity-30 shadow-xl overflow-hidden backdrop-blur-md z-30"
+        className="relative w-full rounded-md flex bg-gradient-to-br from-[#b6b6b6] via-[#71747B]/60 to-[#b6b6b6] opacity-30 shadow-xl overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={Div}
@@ -46,7 +46,7 @@ export default function Profile() {
             className="object-contain object-cover h-full w-full opacity-60"
           />
         </motion.div>
-        <div className="flex-grow pr-4 text-xs md:text-2xl flex items-center justify-center text-right">
+        <div className="flex-grow pr-4 text-xs md:text-2xl font-monaSansM flex items-center justify-center text-right">
           <motion.p
             key={key}
             className="py-4 mx-2"
