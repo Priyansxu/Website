@@ -30,21 +30,20 @@ export default function Skills() {
           variants={FadeInStagger}
         >
           <div className="flex w-[200%] animate-scroll">
-            {icons.map((icon, index) => (
-              <div key={index} className="flex-none mx-4">
-                {icon.icon}
-              </div>
-            ))}
-            {icons.map((icon, index) => (
-              <div key={index + icons.length} className="flex-none mx-4">
-                {icon.icon}
-              </div>
-            ))}
-            {icons.map((icon, index) => (
-              <div key={index + icons.length} className="flex-none mx-4">
-                {icon.icon}
-              </div>
-            ))}
+            <div className="flex w-full">
+              {icons.map((icon, index) => (
+                <div key={index} className="flex-none mx-4">
+                  {icon.icon}
+                </div>
+              ))}
+            </div>
+            <div className="flex w-full">
+              {icons.map((icon, index) => (
+                <div key={index + icons.length} className="flex-none mx-4">
+                  {icon.icon}
+                </div>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
