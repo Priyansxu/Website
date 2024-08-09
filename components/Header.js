@@ -15,7 +15,7 @@ export default function Header() {
           transition={{ duration: 2, ease: "easeInOut" }}
           style={{ height: "5vh" }}
 ></motion.div>
-      <div className="py-20">
+      <div className="py-20 px-8">
         <motion.h1
           className="text-4xl font-bold text-black bg-clip-text pb-3"
           initial={{ opacity: 0, y: -20 }}
