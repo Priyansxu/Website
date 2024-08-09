@@ -13,7 +13,7 @@ export default function Header() {
         className="bg-black -mt-4 mb-4"
         initial={{ 
           clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
-          filter: "blur(20px)",
+          filter: "blur(40px)",
           opacity: 0
         }}
         animate={{ 
@@ -21,7 +21,7 @@ export default function Header() {
           filter: "blur(0px)",
           opacity: 1
         }}
-        transition={{ duration: 2, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
         style={{ height: "5vh" }}
       ></motion.div>
       <div className="py-20 px-8">
