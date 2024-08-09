@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <section className="relative text-center">
       <motion.div
-        className="top-0 left-0 w-full bg-black"
+        className="top-0 left-0 bg-black"
         initial={{ clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)" }}
         animate={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 60%, 85% 100%, 15% 100%, 0% 60%)" }}
         transition={{ duration: 2, ease: "easeInOut" }}
@@ -26,7 +26,7 @@ export default function Header() {
         Priyanshu
       </motion.h1>
       <motion.p
-        className="relative mt-4 text-lg font-spaceMono text-gray-300 backdrop-blur-md z-10"
+        className="relative mt-4 text-lg font-spaceMono text-gray-600 backdrop-blur-md z-10"
         initial="hidden"
         animate="visible"
         variants={FadeInStagger}
