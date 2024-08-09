@@ -13,7 +13,7 @@ export default function Header() {
         className="bg-black -mt-4 mb-4"
         initial={{ 
           clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
-          filter: "blur(10px)",
+          filter: "blur(20px)",
           opacity: 0
         }}
         animate={{ 
