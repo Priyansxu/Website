@@ -9,7 +9,7 @@ export default function HomePage() {
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462] relative overflow-hidden">
       <Particles quantity={150} />
       <main className="pt-20 relative">
-        <Shape />
+        <Shape className="z-30" />
         <Header />
         <Profile />
         <Skills />
