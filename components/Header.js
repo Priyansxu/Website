@@ -9,7 +9,7 @@ const paragraphText =
 export default function Header() {
   return (
 <section>
-<div className="relative h-16">
+<div className="relative h-16 z-30">
   <div
     className="absolute top-0 left-0 w-full bg-black"
     style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 60%, 85% 100%, 15% 100%, 0% 60%)" }}
