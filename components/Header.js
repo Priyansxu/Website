@@ -9,10 +9,11 @@ const paragraphText =
 export default function Header() {
   return (
     <section className="relative text-center">
+      {/* Shape attached to the top of the screen */}
       <motion.div
-        className="top-0 left-0 w-full h-16 bg-black"
+        className="w-full h-16 bg-black"
         initial={{ clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)" }}
-        animate={{ clipPath: "polygon(0% 0%, 94% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 20%, 6% 0%)" }}
+        animate={{ clipPath: "polygon(0% 20%, 6% 0%, 94% 0%, 100% 20%, 100% 100%, 0% 100%)" }}
         transition={{ duration: 1.5, ease: "easeInOut" }}
       ></motion.div>
 
