@@ -9,11 +9,11 @@ const paragraphText =
 export default function Header() {
   return (
     <section className="relative text-center">
-      <motion.div className="top-0 left-0 bg-black"
+      <motion.div className="bg-black"
           initial={{ clipPath: "polygon(15% 100%, 85% 100%, 100% 20%, 0% 20%)" }}
           animate={{ clipPath: "polygon(15% 100%, 85% 100%, 100% 20%, 0% 20%)" }}
           transition={{ duration: 2, ease: "easeInOut" }}
-          style={{ height: "10vh" }}
+          style={{ height: "5vh" }}
 ></motion.div>
       <div className="p-6">
         <motion.h1
