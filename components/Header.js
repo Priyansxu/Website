@@ -9,12 +9,21 @@ const paragraphText =
 export default function Header() {
   return (
     <section className="relative text-center">
-      <motion.div className="bg-black -mt-4 mb-4"
-          initial={{ clipPath: "polygon(15% 100%, 85% 100%, 100% 20%, 0% 20%)" }}
-          animate={{ clipPath: "polygon(15% 100%, 85% 100%, 100% 20%, 0% 20%)" }}
-          transition={{ duration: 2, ease: "easeInOut" }}
-          style={{ height: "5vh" }}
-></motion.div>
+      <motion.div
+        className="bg-black -mt-4 mb-4"
+        initial={{ 
+          clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
+          filter: "blur(10px)",
+          opacity: 0
+        }}
+        animate={{ 
+          clipPath: "polygon(15% 100%, 85% 100%, 100% 20%, 0% 20%)",
+          filter: "blur(0px)",
+          opacity: 1
+        }}
+        transition={{ duration: 2, ease: "easeInOut" }}
+        style={{ height: "5vh" }}
+      ></motion.div>
       <div className="py-20 px-8">
         <motion.h1
           className="text-4xl font-bold text-black bg-clip-text pb-3"
