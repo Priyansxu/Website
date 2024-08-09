@@ -7,7 +7,13 @@ export default function HomePage() {
   return (
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462]  relative overflow-hidden">
       <Particles quantity={150} />
-      <main className="pt-20 relative">
+      <main className="relative">
+<div className="relative h-16">
+  <div
+    className="absolute top-0 left-0 w-full bg-black"
+    style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 60%, 85% 100%, 15% 100%, 0% 60%)" }}
+  ></div>
+</div>
         <Header />
         <Profile />
         <Skills />
