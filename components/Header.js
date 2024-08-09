@@ -8,7 +8,11 @@ const paragraphText =
 
 export default function Header() {
   return (
-    <section className="p-8 text-center">
+<div className="relative bg-white h-16">
+  <div className="absolute top-0 left-0 w-full h-full bg-black" style="clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 85% 100%, 15% 100%, 0% 60%);">
+  </div>
+</div>
+    <section className="px-8 py-6 text-center">
       <motion.h1
         className="text-4xl font-bold text-black bg-clip-text pb-3"
         initial={{ opacity: 0, y: -20 }}
