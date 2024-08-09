@@ -8,9 +8,17 @@ const paragraphText =
 
 export default function Header() {
   return (
-    <section className="p-5 text-center">
+    <section className="relative p-5 text-center">
+      <motion.div
+        className="absolute top-0 left-0 w-full h-full bg-black"
+        initial={{ clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)" }}
+        animate={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 60%, 85% 100%, 15% 100%, 0% 60%)" }}
+        transition={{ duration: 2, ease: "easeInOut" }}
+        style={{ height: "60vh" }}
+      ></motion.div>
+
       <motion.h1
-        className="text-4xl font-bold text-black bg-clip-text pb-3"
+        className="relative text-4xl font-bold text-white bg-clip-text pb-3 z-10"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -18,7 +26,7 @@ export default function Header() {
         Priyanshu
       </motion.h1>
       <motion.p
-        className="mt-4 text-lg font-spaceMono text-gray-600 backdrop-blur-md"
+        className="relative mt-4 text-lg font-spaceMono text-gray-300 backdrop-blur-md z-10"
         initial="hidden"
         animate="visible"
         variants={FadeInStagger}
@@ -29,7 +37,7 @@ export default function Header() {
           </motion.span>
         ))}
       </motion.p>
-      <div className="flex justify-center items-center relative mt-6">
+      <div className="flex justify-center items-center relative mt-6 z-10">
         <div className="absolute inset-0 backdrop-blur-md p-6 z-10"></div>
         <Image
           src={Fluid}
