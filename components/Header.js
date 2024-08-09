@@ -34,7 +34,7 @@ export default function Header() {
           Priyanshu
         </motion.h1>
         <motion.p
-          className="mt-4 text-lg font-spaceMono text-gray-600 backdrop-blur-md"
+          className="mt-4 text-lg md:text-2xl font-mono text-gray-600 backdrop-blur-md"
           initial="hidden"
           animate="visible"
           variants={FadeInStagger}
