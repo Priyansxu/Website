@@ -9,7 +9,7 @@ const paragraphText =
 export default function Header() {
   return (
     <section className="relative text-center">
-      <motion.div className="bg-black -m-4"
+      <motion.div className="bg-black -mt-4"
           initial={{ clipPath: "polygon(15% 100%, 85% 100%, 100% 20%, 0% 20%)" }}
           animate={{ clipPath: "polygon(15% 100%, 85% 100%, 100% 20%, 0% 20%)" }}
           transition={{ duration: 2, ease: "easeInOut" }}
