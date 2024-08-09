@@ -10,16 +10,16 @@ export default function Header() {
   return (
     <section className="relative text-center">
       <motion.div
-        className="bg-black -mt-4 mb-4"
+        className="bg-black -mt-4 mb-4 sm:h-[4vh] md:h-[3vh] lg:h-[2vh]"
         initial={{ 
           clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
           filter: "blur(40px)",
-          opacity: 0
+          opacity: 0,
         }}
         animate={{ 
           clipPath: "polygon(15% 100%, 85% 100%, 100% 20%, 0% 20%)",
           filter: "blur(0px)",
-          opacity: 1
+          opacity: 1,
         }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
         style={{ height: "5vh" }}
