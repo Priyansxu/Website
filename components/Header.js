@@ -21,7 +21,7 @@ export default function Header() {
           filter: "blur(0px)",
           opacity: 1
         }}
-        transition={{ duration: 1, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
         style={{ height: "5vh" }}
       ></motion.div>
       <div className="py-20 px-8">
