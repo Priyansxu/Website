@@ -14,7 +14,7 @@ export default function Header() {
         initial={{ clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)" }}
         animate={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 60%, 85% 100%, 15% 100%, 0% 60%)" }}
         transition={{ duration: 2, ease: "easeInOut" }}
-        style={{ height: "60vh" }}
+        style={{ height: "10vh" }}
       ></motion.div>
 <div className="p-6">
       <motion.h1
