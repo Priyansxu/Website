@@ -6,7 +6,7 @@ import Projects from "../components/Projects";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen font-mono bg-gradient-to-br from-[#a5a5a5] to-[#d5d5d5] text-[#4B5462] relative overflow-hidden">
+    <div className="min-h-screen font-mono bg-gradient-to-br from-[#DFE0E4] to-[#D6D7DA] text-[#696868] relative overflow-hidden">
       <Particles quantity={150} />
       <main className="relative">
         <Header />
@@ -17,3 +17,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+{/*  [#a5a5a5]  [#d5d5d5] [#4B5462] */}
