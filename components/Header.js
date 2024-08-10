@@ -26,7 +26,7 @@ export default function Header() {
       ></motion.div>
       <div className="py-20 px-8">
         <motion.h1
-          className="font-celtG text-5xl tracking-wide text-[#686868] bg-clip-text pb-3"
+          className="font-celtG text-4xl tracking-wide text-[#686868] bg-clip-text pb-3"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
