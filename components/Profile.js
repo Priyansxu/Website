@@ -26,12 +26,12 @@ export default function Profile() {
   };
 
   return (
-    <section ref={profileRef} className="flex flex-col m-4 lg:mx-8 bg-[#ababab] rounded-md">
-      <div className="p-4 mb-1 bg-gradient-to-b from-[#ababab] to-[#B2B2B2] rounded-md">
+    <section ref={profileRef} className="flex flex-col m-4 lg:mx-8 bg-gray rounded-md">
+      <div className="p-4 mb-1 bg-gradient-to-b from-gray to-gravi rounded-md">
         <h1 className="text-4xl text-black font-monaSans mt-2">About me</h1>
       </div>
       <motion.div
-        className="relative w-full rounded-md flex bg-gradient-to-br from-[#b6b6b6] via-[#a0a1a3] to-[#b6b6b6] opacity-30 shadow-xl overflow-hidden backdrop-blur-md z-30"
+        className="relative w-full rounded-md flex bg-gradient-to-br from-greyo via-graci to-greyo opacity-30 shadow-xl overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={SlideIn}
@@ -64,7 +64,7 @@ export default function Profile() {
           </motion.p>
         </div>
         <div
-          className="absolute bottom-2 right-2 bg-[#a5a5a5] rounded-full p-2 cursor-pointer opacity-60"
+          className="absolute bottom-2 right-2 bg-buttonGray rounded-full p-2 cursor-pointer opacity-60"
           onClick={handleNext}
         >
           <FaChevronRight className="text-lg" />
