@@ -24,7 +24,7 @@ export default function Header() {
         transition={{ duration: 0.5, ease: "easeInOut" }}
         style={{ height: "5vh" }}
       ></motion.div>
-<h1 className="font-celtG text-8xl text-[#DEDFE1] -m-4 mb-2 rotate-180"> Priyanshu</h1>
+<h1 className="font-celtG text-8xl text-[#c2beb6] -mx-4 mb-2 rotate-180"> Priyanshu</h1>
       <div className="py-20 px-8">
         <motion.h1
           className="font-celtG text-4xl tracking-wide text-[#686868] bg-clip-text pb-3"
