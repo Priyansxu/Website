@@ -26,12 +26,12 @@ export default function Header() {
       ></motion.div>
       <div className="py-20 px-8">
         <motion.h1
-          className="font-celtG text-5xl text-[#686868] bg-clip-text pb-3"
+          className="font-bold text-4xl text-[#686868] bg-clip-text pb-3"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          P<span className="text-4xl font-bold ">riyanshu </span>G.
+        <span className="font-celtG text-5xl">P</span>riyanshu <span className="font-celtG text-5xl">G.</span>
         </motion.h1>
         <motion.p
           className="mt-4 text-lg md:text-2xl font-mono text-gray-600 backdrop-blur-md"
