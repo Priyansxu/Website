@@ -5,6 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        gray: '#ababab',
+        gravi: '#B2B2B2',
+        graci: '#a0a1a3',
+        greyo: '#b6b6b6',
+        buttonGray: '#a5a5a5',
+      },
       fontFamily: {
         spaceMono: ['SpaceMono', 'monospace'],
         celtG: ['CeltG', 'sans-serif'],
