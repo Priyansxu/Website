@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <section className="relative text-center">
       <motion.div
-        className="bg-black -mt-4 mb-4 sm:h-[4vh] md:h-[3vh] lg:h-[2vh]"
+        className="bg-[#686868] -mt-4 mb-4 sm:h-[4vh] md:h-[3vh] lg:h-[2vh]"
         initial={{ 
           clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
           filter: "blur(40px)",
@@ -26,7 +26,7 @@ export default function Header() {
       ></motion.div>
       <div className="py-20 px-8">
         <motion.h1
-          className="text-4xl font-bold text-black bg-clip-text pb-3"
+          className="text-4xl font-bold text-[#686868] bg-clip-text pb-3"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
