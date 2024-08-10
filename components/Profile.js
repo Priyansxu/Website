@@ -26,12 +26,12 @@ export default function Profile() {
   };
 
   return (
-    <section ref={profileRef} className="flex flex-col m-4 lg:mx-8 bg-[#a5a5a5]/30 rounded-md">
-      <div className="p-4 mb-1 bg-gradient-to-b from-[#a5a5a5]/60 via-[#a5a5a5]/40 to-transparent rounded-md">
+    <section ref={profileRef} className="flex flex-col m-4 lg:mx-8 bg-[#ababab] rounded-md">
+      <div className="p-4 mb-1 bg-gradient-to-b from-[#ababab] to-[#B2B2B2] rounded-md">
         <h1 className="text-4xl text-black font-monaSans mt-2">About me</h1>
       </div>
       <motion.div
-        className="relative w-full rounded-md flex bg-gradient-to-br from-[#b6b6b6] via-[#71747B]/40 to-[#b6b6b6] opacity-30 shadow-xl overflow-hidden backdrop-blur-md z-30"
+        className="relative w-full rounded-md flex bg-gradient-to-br from-[#b6b6b6] via-[#a0a1a3] to-[#b6b6b6] opacity-30 shadow-xl overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={SlideIn}
