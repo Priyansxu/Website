@@ -26,7 +26,7 @@ export default function Profile() {
   };
 
   return (
-    <section ref={profileRef} className="flex flex-col m-4 lg:mx-8 bg-gray border border-[#1111] rounded-md">
+    <section ref={profileRef} className="flex flex-col m-4 lg:mx-8 bg-gray border border-[#1111] shadow-inner rounded-md">
       <div className="p-4 -mb-2 bg-gradient-to-b from-gray to-gravi rounded-md">
         <h1 className="text-4xl text-black font-monaSans mt-2">About me</h1>
       </div>
