@@ -31,7 +31,7 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Priyanshu
+          <span className="font-celtG text-5xl">P</span>riyanshu
         </motion.h1>
         <motion.p
           className="mt-4 text-lg md:text-2xl font-mono text-gray-600 backdrop-blur-md"
