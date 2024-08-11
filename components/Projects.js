@@ -15,14 +15,14 @@ export default function Projects() {
       github: '#',
     },
     {
-      name: 'Project 2',
-      description: 'Brief description of Project 2.',
+      name: 'Vexel',
+      description: 'An AI-powered Discord bot that helps with server moderation, automation, and more.',
       link: '#',
       github: '#',
     },
     {
-      name: 'Project 3',
-      description: 'Brief description of Project 3.',
+      name: 'Vexel',
+      description: 'An AI-powered Discord bot that helps with server moderation, automation, and more.',
       link: '#',
       github: '#',
     },
@@ -40,18 +40,18 @@ export default function Projects() {
       <h5 className="text-sm md:text-xl lg:text-2xl text-left font-monaSansM m-4">
         Here are some projects I've worked on recently.
       </h5>
-      <div className="flex flex-col space-y-4 m-3">
+      <div className="flex flex-col space-y-4 m-2">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative flex-none mx-3 p-4 rounded-md shadow-md bg-gradient-to-br from-[#E2E3E5] to-[#D6D7D9]"
+            className="relative flex-none mx-2 p-4 rounded-md bg-gradient-to-br from-[#E2E3E5] to-[#D6D7D9] border border-[#D3D4D6]"
           >
             <div className="absolute top-2 right-2 flex space-x-2">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <FaLink className="text-5xl bg-[#a5a5a5]/30 p-1 rounded-full" />
+                <FaLink className="text-4xl bg-[#a5a5a5]/30 p-1 rounded-full" />
               </a>
               <a href={project.github} target="_blank" rel="noopener noreferrer">
-                <FaGithub className="text-5xl bg-[#a5a5a5]/30 p-1 rounded-full" />
+                <FaGithub className="text-4xl bg-[#a5a5a5]/30 p-1 rounded-full" />
               </a>
             </div>
             <h3 className="text-lg font-bold mb-2">{project.name}</h3>
