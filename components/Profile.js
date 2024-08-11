@@ -31,7 +31,7 @@ export default function Profile() {
         <h1 className="text-4xl text-black/60 font-monaSans my-2">About me</h1>
       </div>
       <motion.div
-        className="relative w-full rounded-md flex bg-gradient-to-br from-[#DBDCDE] to-[#DEDFE3] opacity-30 shadow-xl overflow-hidden backdrop-blur-md z-30"
+        className="relative w-full rounded-md flex bg-gradient-to-br from-[#DBDCDE] to-[#D9DADC] shadow-lg overflow-hidden backdrop-blur-md z-30"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={SlideIn}
