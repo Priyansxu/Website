@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <section className="relative text-center">
       <motion.div
-        className="bg-[#686868] -mt-4 md:-mt-8 mb-4 sm:h-[3vh] md:h-[2vh] lg:h-[1vh] mx-0 md:mx-10"
+        className="bg-[#686868] -mt-4 md:-mt-10 mb-4 sm:h-[3vh] md:h-[2vh] lg:h-[1vh] mx-0 md:mx-10"
         initial={{ 
           clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
           filter: "blur(40px)",
@@ -24,7 +24,7 @@ export default function Header() {
         transition={{ duration: 0.5, ease: "easeInOut" }}
         style={{ height: "5vh" }}
       ></motion.div>
-<h1 className="font-celtG text-9xl md:text-15xl lg:text-20xl text-[#D4D5D9] -mx-4 md:-mx-9 w-full mt-8 py-6 rotate-180">Priyanshu</h1>
+<h1 className="font-celtG text-9xl md:text-15xl lg:text-20xl text-center text-[#D4D5D9] -mx-4 md:-mx-9 w-full mt-8 py-6 rotate-180">Priyanshu</h1>
       <div className="pb-20 px-8">
         <motion.h1
           className="font-celtG text-4xl tracking-wide text-[#686868] bg-clip-text pb-3"
