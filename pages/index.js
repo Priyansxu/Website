@@ -9,10 +9,10 @@ export default function HomePage() {
     <div className="min-h-screen font-mono bg-gradient-to-br from-[#DEDFE3] to-[#DBDCDE] text-[#696868]/80 relative overflow-hidden">
       <Particles quantity={150} />
       <main className="relative">
-        <Header />
-        <Profile />
-        <Skills />
-        <Projects />
+        <Header className="my-8" />
+        <Profile className="my-8" />
+        <Skills className="my-8" />
+        <Projects className="my-8" />
       </main>
     </div>
   );
