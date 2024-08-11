@@ -6,7 +6,7 @@ import Projects from "../components/Projects";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen font-mono bg-gradient-to-br from-[#DFE0E4] to-[#D6D7DA] text-[#696868] relative overflow-hidden">
+    <div className="min-h-screen font-mono bg-gradient-to-br from-[#DEDFE3] to-[#DBDCDE] text-[#696868] relative overflow-hidden">
       <Particles quantity={150} />
       <main className="relative">
         <Header />
