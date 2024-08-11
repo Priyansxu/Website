@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FadeInStagger } from '../motions/effects';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaLink, FaGithub } from 'react-icons/fa';
 
 export default function Projects() {
   const projectsRef = useRef(null);
@@ -31,7 +31,7 @@ export default function Projects() {
   return (
     <motion.div
       ref={projectsRef}
-      className="py-3 my-8 lg:my-10 m-4 bg-gradient-to-b from-[#D6D7D9] to-[#D1D2D4] rounded-md border-2 border-[#D3D4D6] shadow-xl"
+      className="py-3 my-8 lg:my-10 m-4 bg-gradient-to-b from-[DEEFE3] to-[#D6D7D9] rounded-md border-2 border-[#D3D4D6] shadow-xl"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={FadeInStagger}
@@ -48,14 +48,14 @@ export default function Projects() {
           >
             <div className="absolute top-2 right-2 flex space-x-2">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <FaExternalLinkAlt className="text-4xl bg-[#a5a5a5]/30 p-2 rounded-full" />
+                <FalLink className="text-5xl bg-[#a5a5a5]/30 p-1 rounded-full" />
               </a>
               <a href={project.github} target="_blank" rel="noopener noreferrer">
-                <FaGithub className="text-4xl bg-[#a5a5a5]/30 p-2 rounded-full" />
+                <FaGithub className="text-5xl bg-[#a5a5a5]/30 p-1 rounded-full" />
               </a>
             </div>
-            <h3 className="text-xl font-bold mb-2">{project.name}</h3>
-            <p className="text-md">{project.description}</p>
+            <h3 className="text-lg font-bold mb-2">{project.name}</h3>
+            <p className="text-sm">{project.description}</p>
           </div>
         ))}
       </div>
