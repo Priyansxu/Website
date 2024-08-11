@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <section className="relative text-center">
       <motion.div
-        className="bg-[#686868] -mt-4 md:-mt-10 mb-4 sm:h-[3vh] md:h-[2vh] lg:h-[1vh] mx-0 md:mx-10"
+        className="bg-[#686868] -mt-4 md:-mt-16 mb-4 sm:h-[3vh] md:h-[2vh] lg:h-[1vh] mx-0 md:mx-10"
         initial={{ 
           clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
           filter: "blur(40px)",
