@@ -17,14 +17,14 @@ export default function Skills() {
   ];
 
   return (
-    <div ref={skillsRef} className="py-3 my-8 lg:my-10 m-4 bg-[#a5a5a5]/60 rounded-md shadow-xl">
-      <h1 className="text-4xl text-black font-monaSans m-4">Skills</h1>
+    <div ref={skillsRef} className="py-3 my-8 lg:my-10 m-4 bg-gradient-to-b from-[#DEDFE3] to-[#D6D7D9] border-2 border-[#D3D4D6] rounded-md shadow-xl">
+      <h1 className="text-4xl text-black/60 font-monaSans m-4">Skills</h1>
       <h5 className="text-sm md:text-xl lg:text-2xl text-left font-monaSansM m-4">
         Here are some languages and frameworks I've learnt in a year.
       </h5>
       <div className="m-3">
         <motion.div
-          className="relative overflow-hidden bg-[#b6b6b6] rounded-md backdrop-blur-md z-30 py-4"
+          className="relative overflow-hidden bg-gradient-to-br from-[#DBDCDE] to-[#D9DADC] rounded-md backdrop-blur-md z-30 py-4"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={FadeInStagger}
