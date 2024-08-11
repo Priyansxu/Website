@@ -24,7 +24,7 @@ export default function Skills() {
       </h5>
       <div className="m-3">
         <motion.div
-          className="relative overflow-hidden bg-gradient-to-br from-[#DBDCDE] to-[#D9DADC] rounded-md backdrop-blur-md shadow-lg z-30 py-4"
+          className="relative overflow-hidden bg-gradient-to-br from-[#DBDCDE] to-[#D9DADC] rounded-md border border-[#D3D4D6] backdrop-blur-md z-30 py-4"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={FadeInStagger}
