@@ -48,10 +48,10 @@ export default function Projects() {
           >
             <div className="absolute top-2 right-2 flex space-x-2">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <FaLink className="text-4xl bg-[#a5a5a5]/30 p-1 rounded-full" />
+                <FaLink className="text-3xl bg-[#a5a5a5]/30 p-1 rounded-full" />
               </a>
               <a href={project.github} target="_blank" rel="noopener noreferrer">
-                <FaGithub className="text-4xl bg-[#a5a5a5]/30 p-1 rounded-full" />
+                <FaGithub className="text-3xl bg-[#a5a5a5]/30 p-1 rounded-full" />
               </a>
             </div>
             <h3 className="text-lg font-bold mb-2">{project.name}</h3>
