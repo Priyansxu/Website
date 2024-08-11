@@ -24,7 +24,7 @@ export default function Header() {
         transition={{ duration: 0.5, ease: "easeInOut" }}
         style={{ height: "5vh" }}
       ></motion.div>
-<div className="items-center justify-center"><h1 className="font-celtG text-9xl md:text-15xl lg:text-20xl align-center text-[#D4D5D9] -mx-4 md:-mx-9 w-full mt-8 py-6 rotate-180">Vengeance</h1> </div>
+<div className="items-center justify-center"><h1 className="font-celtG text-9xl md:text-15xl lg:text-20xl align-center text-[#D4D5D9] -mx-4 md:-mx-9 w-full mt-8 py-6 rotate-180">VeangeanceVengeance</h1> </div>
       <div className="pb-20 px-8">
         <motion.h1
           className="font-celtG text-4xl tracking-wide text-[#686868] bg-clip-text pb-3"
@@ -46,7 +46,7 @@ export default function Header() {
           ))}
         </motion.p>
         <div className="flex justify-center items-center relative mt-6">
-          <div className="absolute inset-0 backdrop-blur-lg p-6 z-10"></div>
+          <div className="absolute inset-0 backdrop-blur-[6px] p-6 z-10"></div>
           <Image
             src={Fluid}
             alt="Fluid"
