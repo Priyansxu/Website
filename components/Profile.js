@@ -37,7 +37,7 @@ export default function Profile() {
         variants={SlideIn}
       >
         <motion.div
-          className="flex-none w-1/3"
+          className="flex-none w-1/3 lg:w-1/4 xl:w-1/5"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={BlurIn}
