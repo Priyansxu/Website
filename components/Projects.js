@@ -48,7 +48,7 @@ export default function Projects() {
           >
             <div className="absolute top-2 right-2 flex space-x-2">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <FalLink className="text-5xl bg-[#a5a5a5]/30 p-1 rounded-full" />
+                <FaLink className="text-5xl bg-[#a5a5a5]/30 p-1 rounded-full" />
               </a>
               <a href={project.github} target="_blank" rel="noopener noreferrer">
                 <FaGithub className="text-5xl bg-[#a5a5a5]/30 p-1 rounded-full" />
