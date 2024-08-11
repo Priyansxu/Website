@@ -46,7 +46,7 @@ export default function Header() {
           ))}
         </motion.p>
         <div className="flex justify-center items-center relative mt-6">
-          <div className="absolute inset-0 backdrop-blur-md p-6 z-10"></div>
+          <div className="absolute inset-0 backdrop-blur-lg p-6 z-10"></div>
           <Image
             src={Fluid}
             alt="Fluid"
