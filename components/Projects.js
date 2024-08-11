@@ -31,7 +31,7 @@ export default function Projects() {
   return (
     <motion.div
       ref={projectsRef}
-      className="py-3 my-8 lg:my-10 m-4 bg-gradient-to-b from-[#D1D2D4] to-[#C9CACB] rounded-md border-2 border-[#D3D4D6] shadow-xl"
+      className="py-3 my-8 lg:my-10 m-4 bg-gradient-to-b from-[#D6D7D9] to-[#D1D2D4] rounded-md border-2 border-[#D3D4D6] shadow-xl"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={FadeInStagger}
@@ -48,10 +48,10 @@ export default function Projects() {
           >
             <div className="absolute top-2 right-2 flex space-x-2">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <FaExternalLinkAlt className="text-xl bg-[#a5a5a5]/30 p-2 rounded-full" />
+                <FaExternalLinkAlt className="text-4xl bg-[#a5a5a5]/30 p-2 rounded-full" />
               </a>
               <a href={project.github} target="_blank" rel="noopener noreferrer">
-                <FaGithub className="text-xl bg-[#a5a5a5]/30 p-2 rounded-full" />
+                <FaGithub className="text-4xl bg-[#a5a5a5]/30 p-2 rounded-full" />
               </a>
             </div>
             <h3 className="text-xl font-bold mb-2">{project.name}</h3>
