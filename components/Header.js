@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <section className="relative text-center">
       <motion.div
-        className="bg-[#686868] -mt-4 md:-mt-16 mb-4 sm:h-[3vh] md:h-[2vh] lg:h-[1vh] mx-0 md:mx-10"
+        className="bg-[#686868] -mt-4 mb-4 sm:h-[3vh] md:h-[2vh] lg:h-[1vh] mx-0 md:mx-10"
         initial={{ 
           clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
           filter: "blur(10px)",
@@ -24,6 +24,8 @@ export default function Header() {
         transition={{ duration: 0.5, ease: "easeInOut" }}
         style={{ height: "5vh" }}
       ></motion.div>
+    <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-gray-900 to-transparent backdrop-blur-lg"></div>
+
 <h1 className="font-celtG text-9xl md:text-15xl lg:text-20xl translate-x-8 text-[#D4D5D9] -mx-4 md:-mx-9 w-full mt-8 py-6 rotate-180">Vengeance</h1>
       <div className="pb-20 px-8">
         <motion.h1
